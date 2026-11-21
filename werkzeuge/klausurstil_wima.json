@@ -1,0 +1,21 @@
+{
+ "Darf man (x+2)/x kürzen?": {"erklaeren": "Darf man (x + 2)/x durch x kürzen? Begründen Sie."},
+ "Quadratische Ungleichung lösen": {"erklaeren": "Beschreiben Sie das Vorgehen beim Lösen einer quadratischen Ungleichung."},
+ "Bruchungleichung": {"erklaeren": "Erklären Sie, warum man bei Bruchungleichungen eine Fallunterscheidung braucht."},
+ "Konvergent ⇒ ?": {"erklaeren": "Welche Eigenschaft folgt aus der Konvergenz einer Folge? Gilt die Umkehrung?"},
+ "Bruchfolge, gleicher Grad": {"erklaeren": "Wie bestimmt man den Grenzwert einer Bruchfolge, wenn Zähler und Nenner denselben Grad haben?"},
+ "Drei Einschränkungen des Definitionsbereichs": {"nennen": "Nennen Sie drei typische Einschränkungen des Definitionsbereichs.", "erklaeren": null},
+ "Zerlegung cos(sin²x)": null,
+ "(f∘g)(x)": null,
+ "Wann umkehrbar?": {"erklaeren": "Wann ist eine Funktion umkehrbar?"},
+ "Umkehrfunktion bilden": {"erklaeren": "Beschreiben Sie, wie man die Umkehrfunktion bildet."},
+ "Ökonomische Bedeutung": {"erklaeren": "Erklären Sie die ökonomische Bedeutung der ersten Ableitung."},
+ "Polynomdivision Rest 0": null,
+ "Ablauf Kurvendiskussion": {"nennen": "Nennen Sie die Schritte einer Kurvendiskussion.", "erklaeren": null},
+ "Verlauf Angebot/Nachfrage": null,
+ "Linear unabhängig": {"erklaeren": "Wann sind Vektoren linear unabhängig?"},
+ "Partielle Ableitung nach x": {"erklaeren": "Erklären Sie, wie man partiell nach x ableitet."},
+ "Hesse-Matrix": {"erklaeren": "Was ist die Hesse-Matrix?"},
+ "Bedeutung": {"erklaeren": "Erklären Sie die Bedeutung des totalen Differentials."},
+ "Verringerung eines Inputs": null
+}

@@ -1,0 +1,159 @@
+{
+ "begriffe": [
+  {
+   "begriff": "Dichotomy",
+   "muster": "[Dd]ichotom(?:y|ies)",
+   "heimat": "dichotomies",
+   "text": "Dichotomy (Dichotomie): a pair of opposite but complementary perspectives on language."
+  },
+  {
+   "begriff": "Synchronic",
+   "muster": "[Ss]ynchronic",
+   "heimat": "synchronic-diachronic",
+   "text": "Synchronic (synchron): studying language at one specific point in time."
+  },
+  {
+   "begriff": "Diachronic",
+   "muster": "[Dd]iachronic",
+   "heimat": "synchronic-diachronic",
+   "text": "Diachronic (diachron): studying language change through time; also historical linguistics."
+  },
+  {
+   "begriff": "Form",
+   "muster": "\\b[Ff]orm\\b",
+   "heimat": "form-function",
+   "text": "Form (Form): the structure of language – sounds, word forms, sentence patterns."
+  },
+  {
+   "begriff": "Function",
+   "muster": "\\b[Ff]unction\\b",
+   "heimat": "form-function",
+   "text": "Function (Funktion): what a form is used for in communication; its purpose."
+  },
+  {
+   "begriff": "Applied linguistics",
+   "muster": "[Aa]pplied linguistics",
+   "heimat": "applied-theoretical",
+   "text": "Applied linguistics (angewandte Sprachwissenschaft): uses linguistic findings to solve real-life problems such as language teaching, translation or speech therapy."
+  },
+  {
+   "begriff": "Theoretical linguistics",
+   "muster": "[Tt]heoretical(?: linguistics)?",
+   "heimat": "applied-theoretical",
+   "text": "Theoretical linguistics (theoretische Sprachwissenschaft): studies language for its own sake to describe and explain the language system."
+  },
+  {
+   "begriff": "Structuralism",
+   "muster": "[Ss]tructuralism",
+   "heimat": "structuralism",
+   "text": "Structuralism (Strukturalismus): school of thought going back to Ferdinand de Saussure (~1900); language as a system of signs."
+  },
+  {
+   "begriff": "Langue",
+   "muster": "\\blangue\\b",
+   "heimat": "structuralism",
+   "text": "Langue: the abstract language system shared by all members of a speech community (Saussure)."
+  },
+  {
+   "begriff": "Parole",
+   "muster": "\\bparole\\b",
+   "heimat": "structuralism",
+   "text": "Parole: the concrete usage of language by the individual (Saussure)."
+  },
+  {
+   "begriff": "Speech community",
+   "muster": "[Ss]peech community",
+   "heimat": "structuralism",
+   "text": "Speech community (Sprachgemeinschaft): all people who share the same language system."
+  },
+  {
+   "begriff": "Signifié",
+   "muster": "signifié",
+   "heimat": "linguistic-sign",
+   "text": "Signifié / signified (das Bezeichnete): the concept or mental idea of a sign."
+  },
+  {
+   "begriff": "Signifiant",
+   "muster": "signifiant",
+   "heimat": "linguistic-sign",
+   "text": "Signifiant / signifier (das Bezeichnende): the sound image of a sign, e.g. /frɒg/."
+  },
+  {
+   "begriff": "Arbitrary",
+   "muster": "[Aa]rbitrar(?:y|iness)",
+   "heimat": "linguistic-sign",
+   "text": "Arbitrary (arbiträr): there is no natural link between the sound image and the concept; it is a convention."
+  },
+  {
+   "begriff": "Formalism",
+   "muster": "[Ff]ormalism",
+   "heimat": "formalism-chomsky",
+   "text": "Formalism (Formalismus): studies language by its form and structure; Jakobson (1920s), Chomsky (1950s/60s)."
+  },
+  {
+   "begriff": "Language acquisition device",
+   "muster": "[Ll]anguage acquisition device|LAD",
+   "heimat": "formalism-chomsky",
+   "text": "Language acquisition device, LAD (Spracherwerbsapparat): innate ability to learn language every human is born with (Chomsky)."
+  },
+  {
+   "begriff": "Universal Grammar",
+   "muster": "[Uu]niversal [Gg]rammar",
+   "heimat": "formalism-chomsky",
+   "text": "Universal Grammar (Universalgrammatik): syntactic structures and constraints thought to be universal in human languages and thus innate."
+  },
+  {
+   "begriff": "Innate",
+   "muster": "\\binnate\\b",
+   "heimat": "formalism-chomsky",
+   "text": "Innate (angeboren): present from birth."
+  },
+  {
+   "begriff": "Competence",
+   "muster": "\\b[Cc]ompetence\\b",
+   "heimat": "formalism-chomsky",
+   "text": "Competence (Kompetenz): a speaker’s unconscious knowledge of the grammar of their language (Chomsky)."
+  },
+  {
+   "begriff": "Performance",
+   "muster": "\\b[Pp]erformance\\b",
+   "heimat": "formalism-chomsky",
+   "text": "Performance (Performanz): the actual use of language in real situations (Chomsky)."
+  },
+  {
+   "begriff": "Phonology",
+   "muster": "[Pp]honology",
+   "heimat": "formalism-jakobson",
+   "text": "Phonology (Phonologie): the study of the sound system of a language – which sounds distinguish meaning."
+  },
+  {
+   "begriff": "Morphology",
+   "muster": "[Mm]orphology",
+   "heimat": "formalism-jakobson",
+   "text": "Morphology (Morphologie): the study of the structure of words."
+  },
+  {
+   "begriff": "Syntax",
+   "muster": "\\b[Ss]yntax\\b",
+   "heimat": "formalism-jakobson",
+   "text": "Syntax (Syntax): the study of the structure of sentences."
+  },
+  {
+   "begriff": "Distinctive features",
+   "muster": "[Dd]istinctive features?",
+   "heimat": "formalism-jakobson",
+   "text": "Distinctive features (distinktive Merkmale): properties that distinguish sounds, e.g. voiced vs. voiceless (Jakobson)."
+  },
+  {
+   "begriff": "Prague Linguistic Circle",
+   "muster": "Prague Linguistic Circle",
+   "heimat": "formalism-jakobson",
+   "text": "Prague Linguistic Circle (Prager Linguistikkreis): group founded in 1926 by Jakobson, Trubetzkoy and others."
+  }
+ ],
+ "nicht_markieren": [
+  "language",
+  "linguistics",
+  "school of thought"
+ ]
+}

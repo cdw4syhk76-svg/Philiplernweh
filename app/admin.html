@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lernweh · Admin</title>
+<meta name="robots" content="noindex">
+<style>
+/* Layout: Kopf mit Reitern; Auswertung = Personenliste links, Dashboard rechts (am Handy untereinander) */
+:root{--bg:#f2f1ec;--ink:#17171c;--mut:#6c6b74;--line:#e1ded6;--card:#fff;--soft:#f5f3ee;--acc:#2b2bd9;--acc-soft:#e8e8fb;--on:#fff;--nok:#d9474c;--ok:#14a06b;--warn:#c27c0e;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#121216;--ink:#f0eff4;--mut:#9a99a4;--line:#2a2a31;--card:#1c1c22;--soft:#24242b;--acc:#8c8cff;--acc-soft:#25254a;--on:#0e0e14;--nok:#ff7a7e;--ok:#3fd69b;--warn:#f0b14a;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,'Segoe UI',sans-serif;padding:24px max(16px,env(safe-area-inset-right,0px)) 40px max(16px,env(safe-area-inset-left,0px))}
+main{max-width:1240px;margin:0 auto}
+h1{font-size:24px;margin:0}
+h2{font-size:16px;margin:0 0 12px}
+section,.karte{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+section{margin-bottom:16px}
+input,button,select{font:inherit;border-radius:10px;border:1px solid var(--line);background:var(--soft);color:var(--ink);padding:8px 12px}
+button{cursor:pointer;font-weight:600}
+button:focus-visible,input:focus-visible{outline:2px solid var(--acc);outline-offset:1px}
+.haupt{background:var(--acc);border-color:var(--acc);color:var(--on)}
+.reihe{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.mut{color:var(--mut);font-size:13px}
+.weg{color:var(--nok)}
+.kopf{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}
+nav.reiter{display:flex;gap:6px}
+nav.reiter button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+/* Auswertung */
+.ausw{display:grid;grid-template-columns:260px minmax(0,1fr);gap:16px;align-items:start}
+.liste{position:sticky;top:12px;display:grid;gap:6px;max-height:calc(100vh - 24px);overflow:auto;padding:10px}
+.liste button{display:flex;justify-content:space-between;align-items:center;gap:8px;width:100%;text-align:left;background:transparent;border-color:transparent;font-weight:500;padding:9px 10px}
+.liste button:hover{background:var(--soft)}
+.liste button[aria-current="true"]{background:var(--acc-soft);border-color:var(--acc)}
+.liste .p-n{font-weight:700}
+.liste small{color:var(--mut);font-size:12px;text-align:right}
+.punkt{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;background:var(--line)}
+.punkt.heute{background:var(--ok)}.punkt.woche{background:var(--warn)}
+.punkt.jetzt{background:var(--ok);box-shadow:0 0 0 3px color-mix(in srgb,var(--ok) 30%,transparent)}
+.live{color:var(--ok);font-weight:600}
+.dash{display:grid;gap:16px;min-width:0}
+.dkopf{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px}
+.dkopf h2{font-size:22px;margin:0}
+.kz{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.kz div{background:var(--soft);border-radius:12px;padding:12px}
+.kz b{display:block;font-size:24px;line-height:1.1;font-variant-numeric:tabular-nums}
+.kz span{color:var(--mut);font-size:13px}
+.kz em{display:block;font-style:normal;font-size:12px;color:var(--mut);margin-top:2px}
+.zwei{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:16px}
+.balken{display:flex;align-items:flex-end;gap:3px;height:150px;border-bottom:1px solid var(--line)}
+.balken div{flex:1;min-width:3px;background:var(--acc);border-radius:3px 3px 0 0;position:relative}
+.balken div.leer{background:var(--line)}
+.balken div:hover::after{content:attr(data-t);position:absolute;bottom:100%;left:50%;transform:translateX(-50%);white-space:nowrap;background:var(--ink);color:var(--bg);font-size:12px;padding:3px 7px;border-radius:6px;z-index:2}
+.achse{display:flex;justify-content:space-between;color:var(--mut);font-size:12px;margin-top:4px}
+.faecher{display:grid;gap:12px}
+.fach{display:grid;grid-template-columns:150px minmax(0,1fr) auto;gap:12px;align-items:center}
+.fach b{font-size:14px}
+.bar{height:10px;border-radius:5px;background:var(--soft);overflow:hidden}
+.bar i{display:block;height:100%;border-radius:5px}
+.fach small{color:var(--mut);font-size:12px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.tab{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.tab th,.tab td{text-align:left;padding:8px 6px;border-top:1px solid var(--line);vertical-align:top}
+.tab th{color:var(--mut);font-weight:600;font-size:12px;border-top:0}
+.tab tr.klick{cursor:pointer}.tab tr.klick:hover td{background:var(--soft)}
+.anteil{display:inline-block;height:8px;border-radius:4px;background:var(--nok);vertical-align:middle;margin-right:6px}
+.werk{display:grid;gap:8px}
+.werk div{display:grid;grid-template-columns:110px minmax(0,1fr) 50px;gap:10px;align-items:center;font-size:14px}
+.werk small{text-align:right;color:var(--mut)}
+.meldung{border-top:1px solid var(--line);padding:10px 0}.meldung:first-child{border-top:0;padding-top:0}
+.meldung q{display:block;color:var(--mut);font-size:13px;margin:2px 0}
+.scroll{overflow-x:auto}
+.geist{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.leer{color:var(--mut);font-size:14px}
+/* Codes */
+.neu{font:600 18px ui-monospace,Menlo,monospace;letter-spacing:.08em;background:var(--soft);border-radius:10px;padding:10px 12px;margin-top:10px;white-space:pre-wrap;user-select:all}
+.code{font:600 15px ui-monospace,Menlo,monospace;letter-spacing:.06em;white-space:nowrap}
+.zahl{display:flex;gap:18px;flex-wrap:wrap;color:var(--mut)}.zahl b{color:var(--ink);font-size:20px;display:block}
+@media (max-width:900px){.ausw{grid-template-columns:1fr}.liste{position:static;max-height:none;grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}.zwei{grid-template-columns:1fr}.fach{grid-template-columns:110px minmax(0,1fr)}.fach small{grid-column:2}}
+@media (max-width:640px){#inhalt .tab thead{display:none}#inhalt .tab tr{display:block;border-top:1px solid var(--line);padding:8px 0}#inhalt .tab td{display:block;border:0;padding:2px 0}}
+</style>
+</head>
+<body>
+<main>
+  <div class="kopf"><h1>Lernweh · Admin</h1><nav class="reiter" id="reiter" hidden><button data-r="auswertung" aria-pressed="true">Auswertung</button><button data-r="inhalt" aria-pressed="false">Codes</button></nav></div>
+  <section id="anmeldung">
+    <h2>Passwort</h2>
+    <form class="reihe" id="pwf"><input type="password" id="pw" placeholder="ADMIN_PASSWORT" autocomplete="current-password"><button class="haupt">Öffnen</button></form>
+    <p class="mut" id="pwm"></p>
+  </section>
+
+  <div id="auswertung" hidden>
+    <div class="ausw">
+      <nav class="karte liste" id="liste-p" aria-label="Personen"></nav>
+      <div class="dash" id="dash"><section class="leer">Auswertung wird geladen …</section></div>
+    </div>
+  </div>
+
+  <div id="inhalt" hidden>
+    <section>
+      <h2>Neue Codes</h2>
+      <form class="reihe" id="nf">
+        <input type="number" id="anz" min="1" max="100" value="1" style="width:80px" aria-label="Anzahl">
+        <input id="notiz" placeholder="Notiz, z. B. Name des Käufers" style="flex:1;min-width:200px">
+        <button class="haupt">Erzeugen</button>
+      </form>
+      <div class="neu" id="neu" hidden></div>
+    </section>
+    <section><div class="zahl" id="zahl"></div></section>
+    <section>
+      <h2>Alle Codes</h2>
+      <input id="such" placeholder="Suchen (Code oder Notiz)" style="width:100%;margin-bottom:8px">
+      <table class="tab"><thead><tr><th>Code</th><th>Notiz</th><th>Geräte</th><th>Zuletzt gelernt</th><th></th></tr></thead><tbody id="liste"></tbody></table>
+    </section>
+  </div>
+</main>
+<script>
+(function () {
+  var $ = function (id) { return document.getElementById(id); }, PW = '', ALLE = [], AUS = null, WAHL = 0;
+  var TITEL = /*TITEL*/{};
+  var STRUKTUR = /*STRUKTUR*/[];
+  var WERKZEUG = [['q', 'Quiz und Arbeitsblatt'], ['b', 'Definitionsdrill'], ['k', 'Karteikarten'], ['a', 'große Aufgaben']];
+  try { PW = sessionStorage.getItem('lt-admin') || ''; } catch (e) { }
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function titel(k) { return TITEL[k] || k; }
+  function tag(t) { return t ? new Date(t).toLocaleString('de-DE', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }) : '–'; }
+  function datum(t) { return t ? new Date(t).toLocaleDateString('de-DE', { day: 'numeric', month: 'short' }) : '–'; }
+  function zahl(x, n) { return x == null || isNaN(x) ? '–' : (+x).toLocaleString('de-DE', { maximumFractionDigits: n || 0 }); }
+  function stunden(min) { return min >= 60 ? zahl(min / 60, 1) + ' h' : min + ' min'; }
+  function tagMinus(n) { return new Date(Date.now() - n * 864e5).toLocaleDateString('sv-SE', { timeZone: 'Europe/Berlin' }); }   // Tage nach deutscher Ortszeit wie in der App
+  function api(daten) {
+    daten.passwort = PW;
+    return fetch('/api/admin', { method: 'POST', headers: { 'content-type': 'application/json' }, credentials: 'same-origin', body: JSON.stringify(daten) })
+      .then(function (r) { return r.json().then(function (j) { if (!r.ok) throw j; return j; }); });
+  }
+
+  /* ---------- Rechnen wie in der App ---------- */
+  function faktor(tage, h) { return tage <= h ? 1 : Math.max(.4, 1 - .024 * (tage - h)); }
+  function pct(p) { if (!p) return 0; var tage = p.d ? (Date.now() - p.d) / 864e5 : 0; return Math.round(p.s * faktor(tage, p.h || 4)); }
+  /* je Fach: prüfungsreif (ungeprüfte Oberthemen zählen 0), bearbeitete Aufgaben, Ø Stufe, rote Unterthemen */
+  function fachStand(p, f) {
+    var reif = 0, n = 0, sum = 0, rot = 0;
+    f.kapitel.forEach(function (k) { reif += pct(p.pruefStand[f.id + '/' + k.id]);
+      k.topics.forEach(function (t) { var x = p.themen[f.id + '/' + t]; if (!x) return; n += x[0]; sum += x[1]; if (x[0] >= 5 && x[1] / x[0] < 1.5) rot++; }); });
+    return { reif: f.kapitel.length ? Math.round(reif / f.kapitel.length) : 0, bearbeitet: n, stufe: n ? sum / n : null, rot: rot };
+  }
+  function letzteTage(p, n) { var l = []; for (var i = n - 1; i >= 0; i--) { var t = tagMinus(i); l.push({ tag: t, v: (p.verlauf || {})[t] || { m: 0, a: 0, r: 0, b: 0 } }); } return l; }
+  /* gerade aktiv: letzter Kontakt (Speichern oder Abgleich) höchstens 3 Minuten her; aktive Nutzer speichern alle 2 Minuten */
+  function onMin(p) { return p.zuletztOnline ? (Date.now() - p.zuletztOnline) / 6e4 : Infinity; }
+  function jetztAktiv(p) { return onMin(p) <= 3; }
+  function onText(p) { var m = onMin(p); return m <= 3 ? 'gerade aktiv' : m < 60 ? 'online vor ' + Math.round(m) + ' min' : m < 1440 ? 'online vor ' + Math.round(m / 60) + ' h' : ''; }
+  function aktivSeit(p) { if (jetztAktiv(p)) return 'jetzt'; if (!p.letzterTag) return ''; return p.letzterTag >= tagMinus(0) ? 'heute' : p.letzterTag >= tagMinus(6) ? 'woche' : ''; }
+
+  /* ---------- Bausteine ---------- */
+  function kz(l) { return '<div class="kz">' + l.map(function (z) { return '<div><b>' + z[0] + '</b><span>' + z[1] + '</span>' + (z[2] ? '<em>' + z[2] + '</em>' : '') + '</div>'; }).join('') + '</div>'; }
+  function verlaufHTML(tage, art, name) {
+    var max = Math.max.apply(null, tage.map(function (x) { return x.v[art] || 0; }).concat([1]));
+    return '<div class="balken">' + tage.map(function (x) { var w = x.v[art] || 0; return '<div class="' + (w ? '' : 'leer') + '" style="height:' + Math.max(2, w / max * 100) + '%" data-t="' + datum(x.tag) + ': ' + w + ' ' + name + '"></div>'; }).join('')
+      + '</div><div class="achse"><span>' + datum(tage[0].tag) + '</span><span>max. ' + max + ' ' + name + '</span><span>heute</span></div>';
+  }
+  function faecherHTML(stand) {
+    return '<div class="faecher">' + STRUKTUR.map(function (f, i) { var s = stand[i];
+      return '<div class="fach"><b>' + esc(f.name) + '</b><div class="bar" title="' + s.reif + ' % prüfungsreif"><i style="width:' + s.reif + '%;background:' + esc(f.farbe) + '"></i></div>'
+        + '<small>' + s.reif + ' % reif · ' + zahl(s.bearbeitet) + ' Aufgaben · Ø Stufe ' + (s.stufe == null ? '–' : zahl(s.stufe, 1)) + (s.rot ? ' · <span class="weg">' + s.rot + ' rot</span>' : '') + '</small></div>'; }).join('') + '</div>';
+  }
+  function werkHTML(w) {
+    var g = { q: w.q || 0, b: w.b || 0, k: (w.k || 0) + (w.c || 0) + (w.m || 0) + (w.g || 0) + (w.e || 0), a: w.a || 0 }, sum = g.q + g.b + g.k + g.a || 1;
+    return '<div class="werk">' + WERKZEUG.map(function (z) { var v = g[z[0]]; return '<div><span>' + z[1] + '</span><div class="bar"><i style="width:' + (v / sum * 100) + '%;background:var(--acc)"></i></div><small>' + zahl(v) + '</small></div>'; }).join('') + '</div>';
+  }
+  function schwerHTML(l) {
+    return l.length ? '<div class="scroll"><table class="tab"><thead><tr><th>Unterthema</th><th>nicht gekonnt</th><th>Ø Stufe</th><th>Aufgaben</th></tr></thead><tbody>' + l.map(function (t) {
+      return '<tr><td>' + esc(titel(t.k)) + '</td><td><span class="anteil" style="width:' + Math.max(2, t.anteil) + 'px"></span>' + t.anteil + ' %</td><td>' + zahl(t.schnitt, 1) + '</td><td>' + t.aufgaben + '</td></tr>'; }).join('') + '</tbody></table></div>'
+      : '<p class="leer">Noch zu wenig bearbeitet.</p>';
+  }
+  function meldHTML(l, mitPerson) {
+    return l.length ? l.map(function (m) { return '<div class="meldung"><span class="mut">' + tag(m.d) + (mitPerson ? ' · ' + esc(m.person) : '') + ' · ' + esc(m.ort) + '</span>' + (m.sel ? '<q>' + esc(m.sel) + '</q>' : '') + '<div>' + esc(m.text) + '</div></div>'; }).join('')
+      : '<p class="leer">Keine Meldungen.</p>';
+  }
+
+  /* Zweitname unter dem Namen: Notiz zum Code (wenn der Name aus der App kommt) und Nummer */
+  function nebenName(p) { var l = []; if (p.appName && p.notiz && p.notiz !== p.appName) l.push('Notiz: ' + esc(p.notiz)); l.push('Person ' + p.nr); return l.join(' · ') + ' · '; }
+  /* ---------- Dashboard einer Person ---------- */
+  function personDash(p) {
+    var t30 = letzteTage(p, 30), a7 = 0, m7 = 0;
+    t30.slice(-7).forEach(function (x) { a7 += x.v.a; m7 += x.v.m; });
+    var stand = STRUKTUR.map(function (f) { return fachStand(p, f); });
+    var schwer = Object.keys(p.themen).map(function (k) { var x = p.themen[k]; return { k: k, aufgaben: x[0], anteil: Math.round(x[2] / x[0] * 100), schnitt: x[1] / x[0] }; })
+      .filter(function (t) { return t.aufgaben >= 3 && t.anteil > 0; }).sort(function (a, b) { return b.anteil - a.anteil || b.aufgaben - a.aufgaben; }).slice(0, 10);
+    var reif = stand.length ? Math.round(stand.reduce(function (s, x) { return s + x.reif; }, 0) / stand.length) : 0;
+    return '<section><div class="dkopf"><div><h2>' + esc(p.person) + '</h2><span class="mut">' + (onText(p) ? '<span class="' + (jetztAktiv(p) ? 'live' : '') + '">' + onText(p) + '</span> · ' : '') + nebenName(p) + 'zuletzt aktiv: ' + datum(p.letzterTag) + ' · zuletzt gespeichert ' + tag(p.zuletztGespeichert) + '</span></div>'
+      + '<button class="geist" data-geist="' + p.nr + '">Als Geist ansehen</button></div></section>'
+      + '<section>' + kz([[p.tageAktiv, 'Tage aktiv'], [stunden(p.minuten), 'Lernzeit gesamt', m7 ? stunden(m7) + ' in den letzten 7 Tagen' : ''], [p.minutenJeTag + ' min', 'Ø pro aktivem Tag'], [p.besuche, 'Besuche'],
+        [zahl(p.antworten), 'Antworten', a7 ? a7 + ' in den letzten 7 Tagen' : ''], [p.quote == null ? '–' : p.quote + ' %', 'richtig'], [reif + ' %', 'Ø prüfungsreif'], [p.roteThemen, 'rote Unterthemen']]) + '</section>'
+      + '<section><h2>Lernzeit, letzte 30 Tage</h2>' + verlaufHTML(t30, 'm', 'min') + '</section>'
+      + '<div class="zwei"><section><h2>Fächer</h2>' + faecherHTML(stand) + '</section><section><h2>Antworten je Werkzeug</h2>' + werkHTML(p.werkzeug || {}) + '</section></div>'
+      + '<section><h2>Wo es hakt</h2>' + schwerHTML(schwer) + '</section>'
+      + '<section><h2>Gemeldete Fehler (' + p.meldungen.length + ')</h2>' + meldHTML(p.meldungen.slice().sort(function (a, b) { return String(b.d).localeCompare(String(a.d)); }), false) + '</section>';
+  }
+
+  /* ---------- Durchschnitt aller Personen, die schon gelernt haben ---------- */
+  function schnittDash(a) {
+    var P = a.personen.filter(function (p) { return p.minuten || p.antworten || p.aufgabenBearbeitet; }), n = P.length || 1, g = a.gesamt;
+    function avg(f) { return P.reduce(function (s, p) { return s + (f(p) || 0); }, 0) / n; }
+    var stand = STRUKTUR.map(function (f) { var l = P.map(function (p) { return fachStand(p, f); });
+      return { reif: Math.round(l.reduce(function (s, x) { return s + x.reif; }, 0) / n), bearbeitet: Math.round(l.reduce(function (s, x) { return s + x.bearbeitet; }, 0) / n),
+        stufe: (function () { var m = l.filter(function (x) { return x.stufe != null; }); return m.length ? m.reduce(function (s, x) { return s + x.stufe; }, 0) / m.length : null; })(), rot: Math.round(l.reduce(function (s, x) { return s + x.rot; }, 0) / n) }; });
+    var werk = {}; P.forEach(function (p) { Object.keys(p.werkzeug || {}).forEach(function (k) { werk[k] = (werk[k] || 0) + p.werkzeug[k] / n; }); });
+    var t30 = a.verlauf.map(function (x) { return { tag: x.tag, v: { m: Math.round(x.minuten / Math.max(1, x.personen)), a: x.antworten, p: x.personen } }; });
+    var reif = stand.length ? Math.round(stand.reduce(function (s, x) { return s + x.reif; }, 0) / stand.length) : 0;
+    return '<section><div class="dkopf"><div><h2>Alle im Durchschnitt</h2><span class="mut">' + P.length + ' von ' + g.codes + ' Codes haben schon gelernt · Stand ' + tag(a.stand) + '</span></div><button id="a-neu">Aktualisieren</button></div>'
+      + '<p class="mut" style="margin:10px 0 0">Name = in der App eingetragener Name, sonst die Notiz zum Code, sonst „Person n“. Gezählt werden Besuche, aktive Minuten und Antworten.</p></section>'
+      + '<section>' + kz([[a.personen.filter(jetztAktiv).length, 'gerade aktiv'], [g.aktivHeute, 'heute aktiv'], [g.aktiv7, 'in 7 Tagen aktiv'], [zahl(avg(function (p) { return p.tageAktiv; }), 1), 'Ø Tage aktiv'], [stunden(Math.round(avg(function (p) { return p.minuten; }))), 'Ø Lernzeit je Person'],
+        [Math.round(avg(function (p) { return p.minutenJeTag; })) + ' min', 'Ø pro aktivem Tag'], [zahl(avg(function (p) { return p.antworten; })), 'Ø Antworten je Person'], [g.quote == null ? '–' : g.quote + ' %', 'richtig (alle Antworten)'], [reif + ' %', 'Ø prüfungsreif']]) + '</section>'
+      + '<section><h2>Aktive Personen je Tag, letzte 30 Tage</h2>' + verlaufHTML(t30, 'p', 'Personen') + '</section>'
+      + '<section><h2>Ø Lernzeit je aktiver Person und Tag</h2>' + verlaufHTML(t30, 'm', 'min') + '</section>'
+      + '<div class="zwei"><section><h2>Fächer (Durchschnitt)</h2>' + faecherHTML(stand) + '</section><section><h2>Antworten je Werkzeug (Ø je Person)</h2>' + werkHTML(werk) + '</section></div>'
+      + '<section><h2>Personen im Vergleich</h2><div class="scroll"><table class="tab"><thead><tr><th>Person</th><th>Zuletzt aktiv</th><th>Tage</th><th>Lernzeit</th><th>Ø/Tag</th><th>Antworten</th><th>richtig</th><th>rot</th><th>Übungsklausuren</th></tr></thead><tbody>'
+      + (a.personen.map(function (p) { return '<tr class="klick" data-p="' + p.nr + '"><td><span class="punkt ' + aktivSeit(p) + '"></span>' + esc(p.person) + '</td><td>' + datum(p.letzterTag) + '</td><td>' + p.tageAktiv + '</td><td>' + stunden(p.minuten) + '</td><td>' + p.minutenJeTag + ' min</td><td>' + zahl(p.antworten)
+        + '</td><td>' + (p.quote == null ? '–' : p.quote + ' %') + '</td><td>' + p.roteThemen + '</td><td>' + p.geprueft + (p.pruefSchnitt == null ? '' : ' (' + p.pruefSchnitt + ' %)') + '</td></tr>'; }).join('') || '<tr><td colspan="9" class="mut">Noch keine Daten.</td></tr>') + '</tbody></table></div></section>'
+      + '<section><h2>Wo es bei allen hakt</h2>' + schwerHTML(a.schwer) + '</section>'
+      + '<section><h2>Fragen, die die meisten nicht konnten</h2>' + (a.familien.length ? '<div class="scroll"><table class="tab"><thead><tr><th>Unterthema</th><th>Fragen-Familie</th><th>Personen</th></tr></thead><tbody>'
+        + a.familien.slice(0, 15).map(function (f) { return '<tr><td>' + esc(titel(f.k)) + '</td><td class="mut">' + esc(f.id.split(':').slice(2).join(':')) + '</td><td>' + f.personen + '</td></tr>'; }).join('') + '</tbody></table></div>' : '<p class="leer">Noch keine.</p>') + '</section>'
+      + '<section><h2>Übungsklausuren je Oberthema (schwächste zuerst)</h2>' + (a.pruef.length ? '<div class="scroll"><table class="tab"><thead><tr><th>Oberthema</th><th>Ø Ergebnis</th><th>Personen</th></tr></thead><tbody>'
+        + a.pruef.map(function (p) { return '<tr><td>' + esc(titel(p.k)) + '</td><td>' + p.schnitt + ' %</td><td>' + p.personen + '</td></tr>'; }).join('') + '</tbody></table></div>' : '<p class="leer">Noch keine Übungsklausur geschrieben.</p>') + '</section>'
+      + '<section><h2>Alle gemeldeten Fehler (' + a.meldungen.length + ')</h2>' + meldHTML(a.meldungen, true) + '</section>';
+  }
+
+  function zeichneAuswertung() {
+    var a = AUS; if (!a) return;
+    $('liste-p').innerHTML = '<button data-p="0" aria-current="' + (WAHL === 0) + '"><span class="p-n">Alle (Durchschnitt)</span><small>' + a.gesamt.nutzer + ' Personen</small></button>'
+      + a.personen.map(function (p) { return '<button data-p="' + p.nr + '" aria-current="' + (WAHL === p.nr) + '"><span><span class="punkt ' + aktivSeit(p) + '"></span><span class="p-n">' + esc(p.person) + '</span></span><small>' + (jetztAktiv(p) ? '<span class="live">gerade aktiv</span><br>' + stunden(p.minuten) : p.letzterTag ? datum(p.letzterTag) + '<br>' + stunden(p.minuten) : 'noch nicht aktiv') + '</small></button>'; }).join('');
+    var p = a.personen.filter(function (x) { return x.nr === WAHL; })[0];
+    $('dash').innerHTML = p ? personDash(p) : schnittDash(a);
+    var nb = $('a-neu'); if (nb) nb.onclick = auswertung;
+  }
+  function auswertung() {
+    return api({ aktion: 'auswertung' }).then(function (a) { AUS = a; zeichneAuswertung(); })
+      .catch(function (e) { $('dash').innerHTML = '<section class="weg">Auswertung nicht möglich: ' + esc((e && (e.text || e.fehler)) || 'keine Verbindung') + '</section>'; });
+  }
+  function waehle(nr) { WAHL = nr; zeichneAuswertung(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  /* Geist-Ansicht: Lernstand der Person holen (setzt ein 2-Stunden-Cookie fürs Ansehen) und die App in einem neuen Tab öffnen */
+  function geist(nr, knopf) {
+    knopf.disabled = true; knopf.textContent = 'Öffne …';
+    var tab = window.open('', '_blank');
+    api({ aktion: 'geist', nr: nr }).then(function (j) {
+      try { localStorage.setItem('lt-geist', JSON.stringify({ person: j.person, daten: j.daten })); } catch (e) { }
+      if (tab) tab.location.href = 'index.html?geist=1#start'; else location.href = 'index.html?geist=1#start';
+    }).catch(function (e) { if (tab) tab.close(); alert('Geist-Ansicht nicht möglich: ' + ((e && (e.text || e.fehler)) || 'keine Verbindung')); })
+      .then(function () { knopf.disabled = false; knopf.textContent = 'Als Geist ansehen'; });
+  }
+  $('liste-p').addEventListener('click', function (e) { var b = e.target.closest('[data-p]'); if (b) waehle(+b.dataset.p); });
+  $('dash').addEventListener('click', function (e) {
+    var g = e.target.closest('[data-geist]'); if (g) return geist(+g.dataset.geist, g);
+    var r = e.target.closest('tr[data-p]'); if (r) waehle(+r.dataset.p);
+  });
+
+  /* ---------- Codes ---------- */
+  function zeichne() {
+    var f = $('such').value.trim().toUpperCase().replace(/-/g, '');
+    var l = ALLE.filter(function (c) { return !f || c.code.indexOf(f) >= 0 || (c.notiz || '').toUpperCase().indexOf(f) >= 0; });
+    $('liste').innerHTML = l.map(function (c) {
+      return '<tr><td class="code">' + esc(c.anzeige) + (c.gesperrt ? ' <span class="weg">gesperrt</span>' : '') + '<div class="mut">erstellt ' + tag(c.erstellt) + '</div></td>'
+        + '<td><span>' + esc(c.notiz) + '</span> <button data-a="notiz" data-c="' + c.code + '">✎</button></td>'
+        + '<td>' + (c.geraete.length ? c.geraete.map(function (g) { return esc(g.name) + ' <span class="mut">' + tag(g.zuletzt) + '</span>'; }).join('<br>') : '<span class="mut">noch nicht benutzt</span>') + '</td>'
+        + '<td>' + tag(c.geaendert) + '</td>'
+        + '<td class="reihe">' + (c.geraete.length ? '<button data-a="geraete-weg" data-c="' + c.code + '">Geräte zurücksetzen</button>' : '')
+        + '<button data-a="sperren" data-c="' + c.code + '" data-s="' + (c.gesperrt ? '0' : '1') + '">' + (c.gesperrt ? 'Entsperren' : 'Sperren') + '</button></td></tr>';
+    }).join('');
+    var benutzt = ALLE.filter(function (c) { return c.geraete.length; }).length;
+    $('zahl').innerHTML = '<span><b>' + ALLE.length + '</b>Codes</span><span><b>' + benutzt + '</b>benutzt</span><span><b>' + (ALLE.length - benutzt) + '</b>noch frei</span>';
+  }
+  function zeigeReiter(r) { ['auswertung', 'inhalt'].forEach(function (x) { $(x).hidden = x !== r; }); Array.prototype.forEach.call($('reiter').children, function (b) { b.setAttribute('aria-pressed', b.dataset.r === r); }); }
+  function laden() {
+    return api({ aktion: 'liste' }).then(function (j) {
+      var erstes = $('anmeldung').hidden === false;
+      ALLE = j.codes; $('anmeldung').hidden = true; $('reiter').hidden = false; zeichne();
+      if (erstes) { zeigeReiter('auswertung'); auswertung(); }
+      if (erstes) setInterval(function () { if (document.visibilityState === 'visible' && AUS) auswertung(); }, 60e3);   // „gerade aktiv“ jede Minute aktualisieren
+      try { sessionStorage.setItem('lt-admin', PW); } catch (e) { }
+    }).catch(function (e) { $('pwm').textContent = e && e.fehler === 'passwort' ? 'Passwort falsch. (Einrichtung prüfen: /api/status)' : 'Fehler: ' + ((e && e.text) || 'keine Verbindung'); });
+  }
+  $('pwf').addEventListener('submit', function (e) { e.preventDefault(); PW = $('pw').value; laden(); });
+  $('reiter').addEventListener('click', function (e) { var b = e.target.closest('button[data-r]'); if (b) zeigeReiter(b.dataset.r); });
+  $('nf').addEventListener('submit', function (e) {
+    e.preventDefault();
+    api({ aktion: 'erzeugen', anzahl: +$('anz').value || 1, notiz: $('notiz').value }).then(function (j) {
+      $('neu').hidden = false; $('neu').textContent = j.codes.join('\n'); $('notiz').value = ''; laden();
+    }).catch(function (e) { alert('Fehler: ' + ((e && e.text) || e.fehler)); });
+  });
+  $('such').addEventListener('input', zeichne);
+  $('liste').addEventListener('click', function (e) {
+    var b = e.target.closest('button[data-a]'); if (!b) return;
+    var a = b.dataset.a, d = { aktion: a, code: b.dataset.c };
+    if (a === 'notiz') { var alt = (ALLE.find(function (c) { return c.code === b.dataset.c; }) || {}).notiz || ''; var n = prompt('Notiz', alt); if (n === null) return; d.notiz = n; }
+    if (a === 'sperren') d.gesperrt = b.dataset.s === '1';
+    if (a === 'geraete-weg' && !confirm('Alle Geräte dieses Codes abmelden? Der Lernstand bleibt erhalten.')) return;
+    api(d).then(laden).catch(function (e) { alert('Fehler: ' + ((e && e.text) || e.fehler)); });
+  });
+  if (PW) laden();
+})();
+</script>
+</body>
+</html>

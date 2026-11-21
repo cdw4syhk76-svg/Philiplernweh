@@ -1,0 +1,190 @@
+/* LernWeh · Originalfolien (app/js/folien.js). Farben nur über Tokens aus app.css. */
+.lw-folien-knopf{position:fixed;z-index:120;top:calc(108px + env(safe-area-inset-top,0px));right:max(12px,env(safe-area-inset-right,0px));width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--x-card);color:var(--x-ink);box-shadow:0 4px 14px var(--x-schatten);border:0;cursor:pointer;transition:transform .14s cubic-bezier(.3,.7,.4,1),box-shadow .2s}
+.lw-folien-knopf svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.lw-folien-knopf:hover,.lw-folien-knopf.on{box-shadow:0 0 0 2px var(--x-acc),0 4px 14px var(--x-schatten)}
+.lw-folien-knopf:active{transform:scale(.96)}
+.lw-geist .lw-folien-knopf{top:calc(152px + env(safe-area-inset-top,0px))}
+
+/* Sprung aus der Lernseite */
+.inhalt .quelle .fo-quelle,.fo-quelle{display:inline-flex;align-items:center;gap:6px;margin-left:10px;padding:3px 10px;border-radius:20px;border:1px solid var(--x-line);background:var(--x-card);color:var(--x-ink);font:inherit;font-size:.78rem;font-weight:600;cursor:pointer;vertical-align:middle}
+.fo-quelle svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.fo-quelle:hover{border-color:var(--x-acc);color:var(--x-acc)}
+.ein-fo-l{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.ein-fo-l .btn{display:inline-flex;align-items:center;gap:8px}
+.ein-fo-l small{color:var(--x-mut);font-weight:500}
+.ein-fo-p{width:10px;height:10px;border-radius:50%;background:var(--fach,var(--x-acc))}
+
+/* Seite */
+.fo{max-width:1240px;margin:0 auto}
+.fo-top .b7-stats span{white-space:normal}
+.fo-faecher{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 10px;margin:0 0 14px;scrollbar-width:thin}
+.fo-faecher button{flex:0 0 auto;display:grid;grid-template-columns:auto 1fr;column-gap:8px;align-items:center;text-align:left;padding:9px 14px;border-radius:14px;border:1px solid var(--x-line);background:var(--x-card);color:var(--x-ink);font:inherit;cursor:pointer}
+.fo-faecher button i{grid-row:span 2;width:10px;height:10px;border-radius:50%;background:var(--fach)}
+.fo-faecher button b{font-size:.92rem}.fo-faecher button small{color:var(--x-mut);font-size:.74rem}
+.fo-faecher button.on{border-color:var(--fach);box-shadow:inset 0 0 0 1px var(--fach)}
+.fo-wrap{display:grid;grid-template-columns:270px minmax(0,1fr);gap:22px;align-items:start}
+.fo-seitel{position:sticky;top:70px;max-height:calc(100vh - 160px);overflow:auto;padding-right:4px;scrollbar-width:thin}
+.fo-suche{display:flex;align-items:center;gap:8px;background:var(--x-card);border:1px solid var(--x-line);border-radius:12px;padding:0 12px}
+.fo-suche svg{width:17px;height:17px;flex:0 0 auto;fill:none;stroke:var(--x-mut);stroke-width:2}
+.fo-suche input{flex:1;min-width:0;border:0;background:none;color:var(--x-ink);font:inherit;font-size:.9rem;padding:10px 0;outline:none}
+.fo-suche:focus-within{border-color:var(--x-acc)}
+.fo-treffer{margin:8px 0 4px;display:grid;gap:4px;max-height:320px;overflow:auto;background:var(--x-card);border:1px solid var(--x-line);border-radius:12px;padding:8px}
+.fo-treffer[hidden]{display:none}
+.fo-treffer>small{color:var(--x-mut);font-size:.74rem;padding:0 4px}
+.fo-treffer button{display:grid;text-align:left;gap:2px;border:0;background:none;color:var(--x-ink);font:inherit;padding:6px;border-radius:8px;cursor:pointer}
+.fo-treffer button:hover{background:var(--x-soft)}
+.fo-treffer button b{font-size:.8rem}.fo-treffer button span{font-size:.76rem;color:var(--x-mut);overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.fo-deckwahl{display:none}
+.fo-decks h3,.fo-legende h3{font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:var(--x-mut);margin:16px 4px 6px}
+.fo-deck{display:grid;width:100%;text-align:left;gap:1px;border:0;background:none;color:var(--x-ink);font:inherit;padding:8px 10px;border-radius:10px;cursor:pointer}
+.fo-deck b{font-size:.86rem;font-weight:600}.fo-deck small{font-size:.74rem;color:var(--x-mut)}.fo-deck em{font-style:normal;color:var(--x-warn)}
+.fo-deck:hover{background:var(--x-soft)}
+.fo-deck.on{background:var(--x-card);box-shadow:inset 3px 0 0 var(--fach),0 1px 3px var(--x-schatten)}
+.fo-legende{margin-top:10px;padding:2px 4px 8px}
+.fo-legende p{display:flex;gap:8px;font-size:.76rem;color:var(--x-mut);margin:6px 0;line-height:1.4}
+.fo-legende p b{display:block;color:var(--x-ink);font-size:.8rem}
+.fo-legende .fo-pk{margin-top:4px}
+.fo-legende .fo-hw{display:block;margin-top:10px}
+
+/* Stand-Punkte */
+.fo-pk{flex:0 0 auto;display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--x-mut)}
+.fo-pk.fo-voll{background:var(--x-ok)}.fo-pk.fo-teil{background:var(--x-warn)}.fo-pk.fo-offen{background:var(--x-nok)}.fo-pk.fo-titel,.fo-pk.fo-weg{background:var(--x-line);box-shadow:inset 0 0 0 1.5px var(--x-mut)}
+
+/* Kopf einer Unterlage */
+.fo-thema{display:flex;align-items:center;gap:12px;flex-wrap:wrap;background:var(--x-card);border:1px solid var(--fach);border-radius:var(--x-rad);padding:12px 14px;margin-bottom:14px}
+.fo-thema>span{flex:1;min-width:220px;display:grid;gap:2px}
+.fo-thema small{font-size:.72rem;color:var(--x-mut);text-transform:uppercase;letter-spacing:.05em}
+.fo-thema em{font-size:.8rem;color:var(--x-mut)}
+.fo-thema-st{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.fo-thema-st button{border:1px solid var(--x-line);background:var(--x-soft);color:var(--x-ink);font:inherit;font-size:.78rem;padding:3px 10px;border-radius:20px;cursor:pointer}
+.fo-thema-st button:hover{border-color:var(--fach)}
+.fo-x{border:0;background:none;color:var(--x-mut);font-size:1rem;cursor:pointer;padding:4px 6px}
+.fo-dkopf{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin-bottom:10px;scroll-margin-top:12px}
+.fo-dkopf small{font-size:.74rem;color:var(--x-mut)}
+.fo-dkopf h2{margin:2px 0 4px;font-family:var(--x-fd);font-size:1.45rem;line-height:1.15}
+.fo-dkopf p{margin:0;font-size:.84rem;color:var(--x-mut)}.fo-dkopf p em{font-style:normal;color:var(--x-nok)}
+.fo-pdf{flex:0 0 auto;text-decoration:none}
+.fo-filter{margin:6px 0 16px}
+
+/* Seiten */
+.fo-liste{list-style:none;margin:0;padding:0;display:grid;gap:16px}
+.fo-s{scroll-margin-top:70px;display:grid;align-items:start;grid-template-columns:minmax(0,1.55fr) minmax(250px,1fr);gap:18px;background:var(--x-card);border-radius:var(--x-rad);padding:14px;box-shadow:0 1px 3px var(--x-schatten);scroll-margin-top:14px;border:1px solid transparent}
+.fo-hoch .fo-s{grid-template-columns:minmax(0,1.1fr) minmax(250px,1fr)}
+.fo-s.fo-an{border-color:var(--fach);box-shadow:0 0 0 1px var(--fach),0 1px 3px var(--x-schatten)}
+.fo-s.fo-blink{animation:fo-blink 1.4s ease-out}
+@keyframes fo-blink{0%{box-shadow:0 0 0 4px var(--x-acc)}100%{box-shadow:0 1px 3px var(--x-schatten)}}
+.fo-bild{position:relative;border-radius:10px;overflow:hidden;background:var(--x-soft);border:1px solid var(--x-line);min-height:80px}
+.fo-ph{aspect-ratio:16/9}.fo-hoch .fo-ph{aspect-ratio:1/1.41}
+.fo-bild img{display:block;width:100%;height:auto;cursor:zoom-in;background:#fff}
+.fo-nr{position:absolute;left:8px;top:8px;z-index:1;font-size:.7rem;font-weight:700;padding:2px 8px;border-radius:20px;background:var(--x-card);color:var(--x-ink);box-shadow:0 1px 3px var(--x-schatten)}
+.fo-bild.da .fo-nr{opacity:.9}
+.fo-fehler{padding:30px 16px;font-size:.84rem;color:var(--x-mut);text-align:center}
+.fo-info{display:flex;flex-direction:column;gap:10px;min-width:0}
+.fo-st{display:flex;align-items:center;gap:8px;margin:0;font-weight:700;font-size:.9rem}
+.fo-st.fo-titel,.fo-st.fo-weg{color:var(--x-mut);font-weight:600}
+.fo-lks{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.fo-lk{width:100%;display:grid;grid-template-columns:1fr auto;column-gap:8px;text-align:left;border:1px solid var(--x-line);background:var(--x-soft2);color:var(--x-ink);font:inherit;padding:8px 10px;border-radius:12px;cursor:pointer}
+.fo-lk small{grid-column:1;font-size:.72rem;color:var(--x-mut)}.fo-lk b{grid-column:1;font-size:.9rem;font-weight:600}
+.fo-lk svg{grid-column:2;grid-row:1/3;align-self:center;width:16px;height:16px;fill:none;stroke:var(--x-mut);stroke-width:2}
+.fo-lk:hover{border-color:var(--fach)}.fo-lk:hover svg{stroke:var(--fach)}
+.fo-lk2{background:none}.fo-lk2 b{font-weight:500}
+.fo-dim{margin:0;font-size:.82rem;color:var(--x-mut)}
+.fo-aufg h4{margin:4px 0 6px;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--x-mut)}
+.fo-aufg ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.fo-a{border-radius:12px;padding:9px 10px;background:var(--x-soft2);border:1px solid var(--x-line);border-left:3px solid var(--x-mut)}
+.fo-a-drin{border-left-color:var(--x-ok)}.fo-a-aehnlich{border-left-color:var(--x-warn)}.fo-a-keine{border-left-color:var(--x-nok)}
+.fo-a-forts{opacity:.85}
+.fo-a-kopf{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 10px}
+.fo-a-l{font-weight:700;font-size:.84rem;overflow-wrap:anywhere}
+.fo-a-st{font-size:.76rem;font-weight:600;color:var(--x-mut)}
+.fo-a-drin .fo-a-st{color:var(--x-ok)}.fo-a-aehnlich .fo-a-st{color:var(--x-warn)}
+.fo-a-knoepfe{display:grid;gap:6px;margin-top:7px}
+.fo-a-auf{display:grid;text-align:left;border:1px solid var(--x-line);background:var(--x-card);color:var(--x-ink);font:inherit;padding:7px 10px;border-radius:10px;cursor:pointer}
+.fo-a-auf b{font-size:.84rem;font-weight:600}.fo-a-auf small{font-size:.72rem;color:var(--x-mut)}
+.fo-a-auf:hover{border-color:var(--x-acc)}
+.fo-a-stoff{margin:7px 0 0;font-size:.78rem;color:var(--x-mut)}
+.fo-a-lk{border:0;background:none;padding:0;font:inherit;color:var(--x-acc);cursor:pointer;text-decoration:underline;text-underline-offset:2px}
+.fo-melde{align-self:flex-start;margin-top:auto}
+.fo-leer{list-style:none}
+.fo-weiter{display:flex;flex-direction:column;align-items:flex-start;gap:2px;width:100%;margin-top:18px;border:0;text-align:left;cursor:pointer;position:relative}
+.fo-weiter small{color:var(--x-mut)}.fo-weiter svg{position:absolute;right:18px;top:50%;width:22px;height:22px;margin-top:-11px;fill:none;stroke:currentColor;stroke-width:2}
+.fo-ov .ov-box{max-width:min(1200px,96vw)}
+.fo-gross{display:block;width:100%;height:auto;border-radius:8px;background:#fff}
+.fo-ab-fuss{font-size:.84rem;color:var(--x-mut);margin:12px 4px 4px}
+
+@media (max-width:980px){
+  .fo-wrap{grid-template-columns:minmax(0,1fr)}
+  .fo-seitel{position:static;max-height:none;overflow:visible;padding:0}
+  .fo-decks,.fo-legende{display:none}
+  .fo-deckwahl{display:block;width:100%;margin-top:8px;padding:10px 12px;border-radius:12px;border:1px solid var(--x-line);background:var(--x-card);color:var(--x-ink);font:inherit;font-size:.9rem}
+  .fo-s,.fo-hoch .fo-s{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:600px){
+  .fo-s{padding:10px;gap:12px}
+  .fo-dkopf h2{font-size:1.2rem}
+  .fo-quelle{margin:6px 0 0}
+}
+@media (min-width:981px){.fo{padding-right:44px}}
+.fo-fehlt{border-radius:12px;padding:9px 11px;background:var(--x-soft2);border:1px solid var(--x-line);border-left:3px solid var(--x-warn)}
+.fo-fehlt h4{margin:0 0 5px;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--x-mut)}
+.fo-fehlt ul{margin:0;padding-left:18px;display:grid;gap:4px}
+.fo-fehlt-ein{margin:0 0 6px;font-size:.76rem;line-height:1.4;color:var(--x-mut)}
+.fo-fehlt-ein b{color:var(--x-ink)}
+.fo-fehlt .fo-fehlt-grenzen{margin:0 0 8px;gap:2px}
+.fo-fehlt .fo-fehlt-grenzen li{font-size:.74rem;line-height:1.4;color:var(--x-mut)}
+.fo-fehlt .fo-fehlt-grenzen li b{background:none;color:var(--x-ink);padding:0;font-weight:600}
+.fo-fehlt .fo-fehlt-l{border-top:1px solid var(--x-line);padding-top:8px}
+.fo-fehlt li{font-size:.84rem;line-height:1.4;overflow-wrap:anywhere}
+.fo-fehlt li b{color:var(--x-ink);background:var(--x-pastel-w);color:var(--x-pastel-w-ink);border-radius:4px;padding:0 3px;font-weight:700}
+.fo-fehlt small{display:block;margin-top:6px;font-size:.72rem;color:var(--x-mut);line-height:1.35}
+.fo-fehlt-nix{margin:0;font-size:.8rem;color:var(--x-mut)}
+.fo-fehlt .fo-adm{list-style:none;padding-left:0}
+.fo-mk{display:flex;gap:8px;align-items:flex-start;cursor:pointer;font-size:.84rem;line-height:1.4}
+.fo-mk input{margin-top:3px;flex:0 0 auto;width:16px;height:16px;accent-color:var(--x-acc)}
+.fo-mk em{display:block;font-style:normal;font-size:.72rem;font-weight:700;color:var(--x-ok)}
+.fo-mk.an>span{opacity:.75}
+.fo-mk-seite{padding:7px 10px;border:1px dashed var(--x-line);border-radius:10px;font-size:.8rem}
+.fo-adm-hw{color:var(--x-acc)}
+.fo-hinweis{font-size:.8rem;line-height:1.45;color:var(--x-mut);background:var(--x-card);border:1px solid var(--x-line);border-left:3px solid var(--x-warn);border-radius:12px;padding:10px 12px;margin:4px 0 12px}
+.fo-hinweis b{color:var(--x-ink);font-weight:600}
+.fo-hinweis ul{margin:4px 0;padding-left:18px}
+.fo-hinweis .fo-adm-hw{margin:6px 0 0}
+.fo-fehlt-ok{border-left-color:var(--x-ok)}
+.fo-fehlt .fo-fehlt-l li[class^="fo-f-"]{list-style:none;margin-left:-18px;display:flex;flex-wrap:wrap;gap:2px 8px;align-items:baseline;color:var(--x-mut);font-size:.8rem}
+.fo-fehlt .fo-fehlt-l li[class^="fo-f-"]>span{flex:1 1 200px}
+.fo-fs{font-style:normal;font-size:.7rem;font-weight:700;white-space:nowrap;color:var(--x-mut)}
+.fo-fs-erg{color:var(--x-ok)}.fo-fs-anders{color:var(--x-acc)}
+.fo-nk{margin:0;font-size:.78rem;font-weight:700;color:var(--x-nok)}
+.fo-nk small{display:block;font-weight:500;color:var(--x-mut)}
+.inhalt .quelle .fo-abgl,.fo-abgl{display:inline-flex;align-items:center;margin-left:10px;font-size:.76rem;font-weight:600;color:var(--x-ok);vertical-align:middle}
+.fo-einzel{margin:0 0 6px}
+/* Definition vollständig nach der Folie (werkzeuge/definitionen_folien.py) */
+
+/* Folienstoff wird nicht mehr gold markiert (Nutzerwunsch 16.11.2026): eingearbeiteter Stoff steht als normaler Text */
+/* Folienfenster zur Lernseite (folien.js fpOeffne): rechts angedockt (Splitscreen) oder gelöst als kleines, verschiebbares Fenster */
+body.fo-split{padding-right:var(--fo-b,440px)}
+.fo-panel{position:fixed;z-index:120;display:flex;flex-direction:column;background:var(--x-card);color:var(--x-ink);border:1px solid var(--x-line);box-shadow:0 12px 36px var(--x-schatten);outline:none}
+.fo-panel:not(.fo-frei){top:0;right:0;bottom:0;width:var(--fo-b,440px);border-width:0 0 0 1px;box-shadow:none}
+.fo-panel.fo-frei{border-radius:16px;overflow:hidden;resize:both;min-width:260px;min-height:220px}
+.fo-p-rand{position:absolute;left:-4px;top:0;bottom:0;width:8px;cursor:ew-resize;z-index:2}
+.fo-frei .fo-p-rand{display:none}
+.fo-p-kopf{display:flex;align-items:center;gap:8px;padding:10px 10px 6px 14px;user-select:none;touch-action:none}
+.fo-frei .fo-p-kopf{cursor:move;background:var(--x-soft2);border-bottom:1px solid var(--x-line);padding-bottom:8px}
+.fo-p-kopf b{font-size:.9rem}
+.fo-p-z{margin-right:auto;font-size:.78rem;color:var(--x-mut);font-variant-numeric:tabular-nums}
+.fo-p-k{border:1px solid var(--x-line);background:var(--x-card);color:var(--x-ink);font:inherit;font-weight:700;width:32px;height:32px;border-radius:50%;cursor:pointer;display:grid;place-items:center;flex:none}
+.fo-p-k:hover{border-color:var(--x-acc);color:var(--x-acc)}
+.fo-p-deck{margin:0;padding:0 14px 6px;font-size:.76rem;color:var(--x-mut);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.fo-p-band{flex:1;min-height:0;display:flex;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain}
+.fo-p-band::-webkit-scrollbar{display:none}
+.fo-p-s{flex:0 0 100%;scroll-snap-align:center;overflow-y:auto;padding:4px 12px;box-sizing:border-box;cursor:zoom-in}
+.fo-p-s .fo-bild{min-height:120px}
+.fo-p-s .fo-bild img{display:block;width:100%;height:auto}
+.fo-p-band > .fo-dim{padding:12px 14px}
+.fo-p-fuss{display:flex;align-items:center;gap:8px;padding:8px 12px 12px;border-top:1px solid var(--x-line)}
+.fo-p-alle{margin-left:auto;font-size:.78rem}
+@media (max-width:760px){body.fo-split{padding-right:0}.fo-p-k[data-fp="frei"]{display:none}}
+.fo-nochmal{text-align:center;margin:12px 0}
+/* „Definition (Folie)“ vor der Folien-Definition (bau.py definitionen_gold, data-def; nur IBL), nicht gold */
+.inhalt [data-def]::before{content:"Definition (Folie): ";font-weight:800}
+.inhalt span[data-def]::before{content:"\A Definition (Folie): ";white-space:pre-wrap}

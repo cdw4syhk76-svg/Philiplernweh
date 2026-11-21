@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LernTool · Anmelden</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap">
+<style>
+:root{--bg:#f1efe9;--ink:#17171c;--mut:#6c6b74;--line:#e1ded6;--card:#fff;--soft:#f4f2ed;--acc:#2b2bd9;--on:#fff;--nok:#e5484d;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#121216;--ink:#f0eff4;--mut:#9a99a4;--line:#2a2a31;--card:#1c1c22;--soft:#24242b;--acc:#8c8cff;--on:#0e0e14;--nok:#ff7a7e;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px 16px;background:var(--bg);color:var(--ink);font:16px/1.5 'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif}
+main{width:100%;max-width:400px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px 24px}
+h1{font:800 30px/1.1 'Bricolage Grotesque','DM Sans',system-ui,sans-serif;margin:0 0 6px;letter-spacing:-.01em}
+p{margin:0 0 18px;color:var(--mut)}
+label{display:block;font-weight:700;font-size:14px;margin-bottom:6px}
+input{width:100%;font:500 22px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;padding:14px;border-radius:12px;border:1px solid var(--line);background:var(--soft);color:var(--ink);text-align:center}
+input:focus{outline:2px solid var(--acc);outline-offset:1px}
+button{font:700 16px/1 'DM Sans',system-ui,sans-serif;border-radius:12px;border:1px solid var(--line);background:var(--soft);color:var(--ink);padding:12px 14px;cursor:pointer}
+.haupt{width:100%;margin-top:14px;background:var(--acc);border-color:var(--acc);color:var(--on);padding:15px}
+button:disabled{opacity:.6;cursor:default}
+.meld{min-height:1.5em;margin:12px 0 0;color:var(--nok);font-size:15px}
+.meld.ok{color:var(--mut)}
+ul{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:8px}
+li{display:flex;align-items:center;gap:10px;justify-content:space-between;border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+li small{display:block;color:var(--mut)}
+.klein{font-size:13px;margin:18px 0 0}
+</style>
+</head>
+<body>
+<main>
+  <h1>LernTool</h1>
+  <p>Gib deinen Code ein. Danach ist dein Lernstand auf diesem Gerät, und auf jedem weiteren, auf dem du denselben Code eingibst (bis zu 3).</p>
+  <form id="f" autocomplete="off">
+    <label for="code">Dein Code</label>
+    <input id="code" name="code" inputmode="text" autocapitalize="characters" spellcheck="false" maxlength="11" placeholder="XXXXX-XXXXX" required>
+    <button class="haupt" id="los" type="submit">Anmelden</button>
+  </form>
+  <div class="meld" id="meld" role="status"></div>
+  <ul id="geraete" hidden></ul>
+  <p class="klein">Du musst dich auf jedem Gerät nur einmal anmelden.</p>
+</main>
+<script>
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+  var geraet;
+  try { geraet = localStorage.getItem('lt-geraet'); } catch (e) { }
+  if (!geraet) {
+    geraet = (crypto.randomUUID ? crypto.randomUUID() : Array.from(crypto.getRandomValues(new Uint8Array(16)), function (b) { return b.toString(16).padStart(2, '0'); }).join(''));
+    try { localStorage.setItem('lt-geraet', geraet); } catch (e) { }
+  }
+  function geraeteName() {
+    var u = navigator.userAgent, os = /iPad|Macintosh/.test(u) && navigator.maxTouchPoints > 1 ? 'iPad' : /iPhone/.test(u) ? 'iPhone' : /Android/.test(u) ? (/Mobile/.test(u) ? 'Android-Handy' : 'Android-Tablet') : /Windows/.test(u) ? 'Windows' : /Mac/.test(u) ? 'Mac' : /Linux/.test(u) ? 'Linux' : 'Gerät';
+    var br = /Edg\//.test(u) ? 'Edge' : /Firefox\//.test(u) ? 'Firefox' : /Chrome\//.test(u) ? 'Chrome' : /Safari\//.test(u) ? 'Safari' : 'Browser';
+    return os + ' · ' + br;
+  }
+  var feld = $('code');
+  feld.addEventListener('input', function () {
+    var c = feld.value.toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, 10);
+    feld.value = c.length > 5 ? c.slice(0, 5) + '-' + c.slice(5) : c;
+  });
+  if (/abgemeldet/.test(location.search)) { $('meld').className = 'meld ok'; $('meld').textContent = 'Du wurdest auf diesem Gerät abgemeldet.'; }
+  function anmelden(entfernen) {
+    $('los').disabled = true; $('meld').className = 'meld ok'; $('meld').textContent = 'Einen Moment …';
+    fetch('/api/login', { method: 'POST', credentials: 'same-origin', headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ code: feld.value, geraet: geraet, name: geraeteName(), entfernen: entfernen || undefined }) })
+      .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
+      .then(function (x) {
+        $('los').disabled = false;
+        if (x.ok) { $('meld').textContent = 'Angemeldet.'; location.replace('/'); return; }
+        $('meld').className = 'meld'; $('meld').textContent = x.j.text || 'Das hat nicht geklappt.';
+        var ul = $('geraete'); ul.hidden = !(x.j.fehler === 'voll');
+        if (x.j.fehler === 'voll') {
+          ul.innerHTML = '';
+          x.j.geraete.forEach(function (g) {
+            var li = document.createElement('li'), s = document.createElement('span'), b = document.createElement('button');
+            s.textContent = g.name; var sm = document.createElement('small');
+            sm.textContent = 'zuletzt ' + new Date(g.zuletzt).toLocaleDateString('de-DE', { day: 'numeric', month: 'short' }); s.appendChild(sm);
+            b.type = 'button'; b.textContent = 'Abmelden'; b.onclick = function () { anmelden(g.geraet); };
+            li.appendChild(s); li.appendChild(b); ul.appendChild(li);
+          });
+        }
+      })
+      .catch(function () { $('los').disabled = false; $('meld').className = 'meld'; $('meld').textContent = 'Keine Verbindung. Bitte prüfe dein Internet.'; });
+  }
+  $('f').addEventListener('submit', function (e) { e.preventDefault(); anmelden(); });
+})();
+</script>
+</body>
+</html>

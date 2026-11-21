@@ -1,0 +1,87 @@
+{
+ "bwl:betrieb:ks-5f59d2": [
+  {
+   "y": "liste",
+   "p": "Nennen Sie die vier Märkte, auf denen der Betrieb etwas tauscht.",
+   "pk": [
+    [
+     "Beschaffungsmarkt"
+    ],
+    [
+     "Absatzmarkt"
+    ],
+    [
+     "Kapitalmarkt",
+     "Kreditmarkt",
+     "Aktienmarkt"
+    ],
+    [
+     "Arbeitsmarkt"
+    ]
+   ],
+   "n": 4,
+   "w": "Staat, Gesellschaft und Konkurrenz gehören zum Umfeld des Betriebs, sind aber keine Märkte. Der Kapitalmarkt zählt einmal, auch wenn er Kredit und Aktien umfasst.",
+   "klausur": true,
+   "stil": 1,
+   "lvl": 3
+  }
+ ],
+ "bwl:leistungsart:ks-c6e7ea": [
+  {
+   "y": "rev",
+   "p": "Eine Autowerkstatt repariert Autos und verkauft Ersatzteile. Ordnen Sie den Betrieb ein und begründen Sie.",
+   "l": "Dienstleistungsbetrieb: Reparatur ist eine Dienstleistung, der Verkauf von Ersatzteilen ist Handel, und Handelsbetriebe zählen ebenfalls zu den Dienstleistungsbetrieben (tertiärer Sektor).",
+   "pk": [
+    "Dienstleistungsbetrieb",
+    "Reparatur",
+    "Handel"
+   ],
+   "w": "",
+   "klausur": true,
+   "stil": 1,
+   "lvl": 3
+  }
+ ],
+ "bwl:wirtschaften:ks-77bc6f": [
+  {
+   "y": "liste",
+   "p": "Nennen Sie die drei Obersätze des Wirtschaftens.",
+   "pk": [
+    [
+     "I: Maximierung des Gewinns",
+     "Maximierung des Gewinns",
+     "höchster Gewinn"
+    ],
+    [
+     "II: langfristige Maximierung des Gewinns",
+     "langfristige Maximierung",
+     "langfristig"
+    ],
+    [
+     "III: langfristige Maximierung unter Nebenbedingungen",
+     "Nebenbedingungen",
+     "unter Beachtung"
+    ]
+   ],
+   "n": 3,
+   "w": "",
+   "klausur": true,
+   "stil": 1,
+   "lvl": 3
+  },
+  {
+   "y": "rev",
+   "p": "Nennen und erklären Sie die drei Obersätze des Wirtschaftens.",
+   "l": "<ul><li>I: Maximierung des Gewinns (Problem: Ausverkauf, kurzfristig bringt Verkaufen am meisten)</li><li>II: langfristige Maximierung des Gewinns (Problem: Betrug, z. B. manipulierte Abgaswerte)</li><li>III: langfristige Maximierung des Gewinns unter Beachtung von Nebenbedingungen (Gesetze, Moral) – die gültige Lösung</li></ul>",
+   "pk": [
+    "I",
+    "II",
+    "III"
+   ],
+   "w": "",
+   "klausur": true,
+   "stil": 1,
+   "lvl": 3
+  }
+ ]
+}

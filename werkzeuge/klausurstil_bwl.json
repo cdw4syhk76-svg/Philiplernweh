@@ -1,0 +1,241 @@
+{
+ "Betriebs-wirtschafts-lehre: die drei Wortteile": {
+  "erklaeren": "Erklären Sie den Begriff Betriebswirtschaftslehre anhand seiner drei Wortteile."
+ },
+ "BWL vs. VWL": {
+  "erklaeren": "Grenzen Sie Betriebs- und Volkswirtschaftslehre voneinander ab."
+ },
+ "Grundproblem der BWL": {
+  "erklaeren": "Erklären Sie das Grundproblem, aus dem die Notwendigkeit des Wirtschaftens folgt."
+ },
+ "Beste Definition der BWL laut Vorlesung": null,
+ "Drei Produktionsfaktoren": {
+  "nennen": "Nennen Sie die drei Produktionsfaktoren.",
+  "erklaeren": "Nennen und erklären Sie die drei Produktionsfaktoren mit Beispielen."
+ },
+ "Rohstoff, Hilfsstoff, Betriebsstoff: je ein Beispiel bei einer Tischlerei": {
+  "erklaeren": "Unterscheiden Sie Roh-, Hilfs- und Betriebsstoffe mit je einem Beispiel aus einer Tischlerei."
+ },
+ "Sachleistungsbetriebe: drei Arten": {
+  "nennen": "Nennen Sie drei Arten von Sachleistungsbetrieben.",
+  "erklaeren": null
+ },
+ "Dienstleistungsbetriebe: vier Arten": {
+  "nennen": "Nennen Sie vier Arten von Dienstleistungsbetrieben.",
+  "erklaeren": null
+ },
+ "Eine Autowerkstatt repariert und verkauft Ersatzteile. Sach- oder Dienstleistung?": {
+  "erklaeren": "Eine Autowerkstatt repariert Autos und verkauft Ersatzteile. Ordnen Sie den Betrieb ein und begründen Sie."
+ },
+ "Drei Jahreszahlen der frühen BWL": null,
+ "Rieger vs. Nicklisch": {
+  "erklaeren": "Vergleichen Sie die Positionen von Rieger und Nicklisch."
+ },
+ "Vom Lehrfach zur Wissenschaft": null,
+ "Zwei Richtungen der heutigen BWL": {
+  "erklaeren": "Unterscheiden Sie die ökonomische und die verhaltenswissenschaftliche BWL."
+ },
+ "Drei Obersätze des Wirtschaftens": {
+  "nennen": "Nennen Sie die drei Obersätze des Wirtschaftens.",
+  "erklaeren": "Nennen und erklären Sie die drei Obersätze des Wirtschaftens."
+ },
+ "Warum steht „langfristig“ im Obersatz III?": {
+  "erklaeren": "Begründen Sie, warum der dritte Obersatz des Wirtschaftens „langfristig“ formuliert ist."
+ },
+ "Maximum-, Minimum-, Optimumprinzip": {
+  "erklaeren": "Unterscheiden Sie Maximum-, Minimum- und Optimumprinzip mit je einem Beispiel."
+ },
+ "„Mit 60 kg Kaffee möglichst viele Packungen“: welches Prinzip?": null,
+ "Produktionsprogramm mit knappen Kapazitäten: Vorgehen": {
+  "erklaeren": "Beschreiben Sie das Vorgehen, um bei knappen Kapazitäten das gewinnmaximale Produktionsprogramm zu bestimmen."
+ },
+ "Wo liegt das Optimum bei zwei Kapazitätsgrenzen meist?": null,
+ "Warum prüft man alle Eckpunkte?": {
+  "erklaeren": "Warum prüft man bei der grafischen Lösung alle Eckpunkte des zulässigen Bereichs?"
+ },
+ "Wer bekommt die Wertschöpfung?": {
+  "nennen": "Nennen Sie die vier Empfänger der Wertschöpfung.",
+  "erklaeren": "Erklären Sie, wie sich die Wertschöpfung auf die Beteiligten verteilt."
+ },
+ "Ist Wertschöpfung gleich Gewinn?": {
+  "erklaeren": "Ist Wertschöpfung gleich Gewinn? Begründen Sie."
+ },
+ "Regeln 4, 5, 6 der Ökonomie": {
+  "erklaeren": "Erläutern Sie die Regeln 4, 5 und 6 der Ökonomie."
+ },
+ "Unbeabsichtigte Konsequenz: Beispiel Mietpreisbremse": {
+  "erklaeren": "Erklären Sie am Beispiel der Mietpreisbremse, wie staatliche Eingriffe unbeabsichtigte Folgen haben können."
+ },
+ "Risiko vs. Unsicherheit": {
+  "erklaeren": "Unterscheiden Sie Risiko und Unsicherheit."
+ },
+ "Räumliche vs. zeitliche Arbitrage": {
+  "erklaeren": "Unterscheiden Sie räumliche und zeitliche Arbitrage mit Beispielen."
+ },
+ "Schöpferische Zerstörung (Schumpeter)": {
+  "erklaeren": "Erklären Sie Schumpeters Konzept der schöpferischen Zerstörung an einem Beispiel."
+ },
+ "Kondratieff-Zyklen": {
+  "erklaeren": "Erklären Sie die Kondratieff-Zyklen."
+ },
+ "Freie Marktwirtschaft vs. Planwirtschaft": {
+  "erklaeren": "Vergleichen Sie freie Marktwirtschaft und Planwirtschaft."
+ },
+ "Growth vs. Degrowth": null,
+ "Soziale Marktwirtschaft": {
+  "erklaeren": "Erklären Sie das Konzept der sozialen Marktwirtschaft."
+ },
+ "Primäre vs. sekundäre Werturteile": {
+  "erklaeren": "Unterscheiden Sie primäre und sekundäre Werturteile mit Beispielen."
+ },
+ "Welche BWL fällt welche Werturteile?": null,
+ "„Die Steuern sind zu hoch.“ Welche Art Werturteil?": null,
+ "Ex ante vs. ex post": {
+  "erklaeren": "Unterscheiden Sie die Betrachtung ex ante und ex post."
+ },
+ "Präskriptiv vs. deskriptiv": {
+  "erklaeren": "Unterscheiden Sie präskriptive und deskriptive Entscheidungstheorie."
+ },
+ "Klassische vs. verhaltenswissenschaftliche Entscheidungstheorie": {
+  "erklaeren": "Vergleichen Sie klassische und verhaltenswissenschaftliche Entscheidungstheorie."
+ },
+ "Zwei Stufen der Entscheidung": null,
+ "Abbruchkriterium bei der Suche nach Alternativen": {
+  "erklaeren": "Erläutern Sie, wann man die Suche nach weiteren Alternativen abbricht."
+ },
+ "Bausteine der Problemstrukturierung": {
+  "erklaeren": "Erläutern Sie die Bausteine der Problemstrukturierung einer Entscheidung."
+ },
+ "Wahrscheinlichkeitsdominanz": {
+  "erklaeren": "Erklären Sie Wahrscheinlichkeitsdominanz."
+ },
+ "Was passiert mit dominierten Alternativen?": null,
+ "Zustandsdominanz": {
+  "erklaeren": "Erklären Sie Zustandsdominanz an einem Beispiel."
+ },
+ "Ist das Bedauern je negativ?": null,
+ "Anderer Name der Savage-Niehans-Regel": null,
+ "Prinzip des mangelnden Grundes": {
+  "erklaeren": "Erklären Sie das Prinzip des mangelnden Grundes (Laplace-Regel)."
+ },
+ "Was leistet Bernoulli gegenüber Bayes?": {
+  "erklaeren": "Was leistet das Bernoulli-Prinzip gegenüber der Bayes-Regel?"
+ },
+ "Bernoulli-Prinzip": {
+  "erklaeren": "Erklären Sie das Bernoulli-Prinzip."
+ },
+ "Bernoulli: zwei Schritte": null,
+ "Begrenzte Rationalität (Simon): drei Grenzen": {
+  "nennen": "Nennen Sie die drei Grenzen der Rationalität nach Simon.",
+  "erklaeren": "Erklären Sie das Konzept der begrenzten Rationalität nach Simon."
+ },
+ "Wie entscheiden begrenzt rationale Menschen?": null,
+ "Vier Verzerrungen neben der Prospect Theory": {
+  "nennen": "Nennen Sie vier Entscheidungsverzerrungen neben der Prospect Theory.",
+  "erklaeren": "Nennen und erklären Sie vier Entscheidungsverzerrungen."
+ },
+ "Besitztumseffekt": {
+  "erklaeren": "Erklären Sie den Besitztumseffekt an einem Beispiel."
+ },
+ "Garbage-Can-Modell: vier Ströme": {
+  "nennen": "Nennen Sie die vier Ströme des Garbage-Can-Modells.",
+  "erklaeren": "Erklären Sie das Garbage-Can-Modell."
+ },
+ "Drei Arten, wie im Garbage-Can-Modell entschieden wird": {
+  "nennen": "Nennen Sie die drei Arten, wie im Garbage-Can-Modell entschieden wird.",
+  "erklaeren": null
+ },
+ "Umweltanalyse vs. Unternehmensanalyse": {
+  "erklaeren": "Grenzen Sie Umweltanalyse und Unternehmensanalyse voneinander ab."
+ },
+ "Welche Phase folgt auf die Umweltanalyse?": null,
+ "Drei Fragen der strategischen Führung": {
+  "nennen": "Nennen Sie die drei Leitfragen der strategischen Führung.",
+  "erklaeren": null
+ },
+ "Vision vs. Leitbild": {
+  "erklaeren": "Unterscheiden Sie Vision und Leitbild."
+ },
+ "Was ändert sich von oben nach unten?": null,
+ "Zielhierarchie von oben nach unten": {
+  "erklaeren": "Beschreiben Sie die Zielhierarchie eines Unternehmens von oben nach unten."
+ },
+ "Allgemeine Umwelt: vier Bereiche": {
+  "nennen": "Nennen Sie die vier Bereiche der allgemeinen Umwelt.",
+  "erklaeren": null
+ },
+ "Wettbewerbsumfeld": {
+  "erklaeren": "Erklären Sie, was zum Wettbewerbsumfeld gehört und mit welchem Instrument man es analysiert."
+ },
+ "Neues Lieferkettengesetz: welcher Teil der Umwelt?": null,
+ "Vorwärts- vs. Rückwärtsintegration": {
+  "erklaeren": "Unterscheiden Sie Vorwärts- und Rückwärtsintegration als Drohung in Verhandlungen."
+ },
+ "Wann sind Lieferanten mächtig?": {
+  "nennen": "Nennen Sie vier Gründe für eine hohe Verhandlungsmacht der Lieferanten.",
+  "erklaeren": null
+ },
+ "Wann sind Abnehmer mächtig?": {
+  "nennen": "Nennen Sie drei Gründe für eine hohe Verhandlungsmacht der Abnehmer.",
+  "erklaeren": null
+ },
+ "Market-based vs. Resource-based View": {
+  "erklaeren": "Vergleichen Sie Market-based View und Resource-based View."
+ },
+ "Welcher Ansatz gehört zu Porter?": null,
+ "Gründe für den Erfahrungskurveneffekt": {
+  "nennen": "Nennen Sie vier Gründe für den Erfahrungskurveneffekt.",
+  "erklaeren": null
+ },
+ "Erfahrungskurve": {
+  "erklaeren": "Erklären Sie die Erfahrungskurve."
+ },
+ "Ansoff-Matrix: vier Felder": {
+  "nennen": "Nennen Sie die vier Felder der Ansoff-Matrix.",
+  "erklaeren": "Erklären Sie die vier Strategien der Ansoff-Matrix."
+ },
+ "Welches Ansoff-Feld hat das höchste Risiko?": null,
+ "Drei Wettbewerbsstrategien nach Porter": {
+  "nennen": "Nennen Sie die drei Wettbewerbsstrategien nach Porter.",
+  "erklaeren": "Erklären Sie die drei Wettbewerbsstrategien nach Porter mit Beispielen."
+ },
+ "Discounter mit niedrigsten Preisen: Strategie?": null,
+ "Implementierung: drei Schritte": {
+  "nennen": "Nennen Sie die drei Schritte der Strategieimplementierung.",
+  "erklaeren": null
+ },
+ "Warum scheitern Strategien oft?": {
+  "erklaeren": "Erläutern Sie, warum Strategien häufig scheitern."
+ },
+ "Kontrolle der Strategie": {
+  "erklaeren": "Wie kontrolliert man den Erfolg einer Strategie?"
+ },
+ "Märkte rund um den Betrieb": {
+  "nennen": "Nennen Sie die vier Märkte rund um den Betrieb.",
+  "erklaeren": null
+ },
+ "Ein Stahlwerk ist welcher Betrieb?": null,
+ "„200 Packungen mit möglichst wenig Gas“: welches Prinzip?": null,
+ "Aufgaben des Staates im Markt": {
+  "nennen": "Nennen Sie drei Aufgaben des Staates im Markt.",
+  "erklaeren": "Erläutern Sie drei Aufgaben des Staates im Markt."
+ },
+ "Intentional rational": {
+  "erklaeren": "Erklären Sie, was „intentional rational“ im Konzept der begrenzten Rationalität bedeutet."
+ },
+ "Prospect Theory: Kernaussage": {
+  "erklaeren": "Erklären Sie die Kernaussage der Prospect Theory."
+ },
+ "Garbage-Can: Was ist der „Mülleimer“?": null,
+ "Steigende Energiepreise: welcher Teil der Umwelt?": null,
+ "Stuck in the middle": {
+  "erklaeren": "Erklären Sie die Gefahr, „stuck in the middle“ zu sein."
+ },
+ "Empirische vs. normative Wissenschaft": {
+  "erklaeren": "Unterscheiden Sie empirische und normative Wissenschaft und ordnen Sie die Werturteilsfrage ein."
+ },
+ "Die Werturteilsfrage": {
+  "erklaeren": "Erläutern Sie die Werturteilsfrage der BWL."
+ },
+ "Leitbild-Beispiele": null
+}

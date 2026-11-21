@@ -1,0 +1,54 @@
+{
+ "faecher": [
+  {
+   "id": "ling",
+   "name": "Linguistics",
+   "lang": "Introduction to English Linguistics (Einführung in die englische Sprachwissenschaft)",
+   "modul": "ling1",
+   "person": "JLU Gießen",
+   "farbe": "ling",
+   "mix": {
+    "block": 2.5,
+    "luecke": 3,
+    "liste": 1.5,
+    "kurz": 1.5,
+    "mc": 1
+   },
+   "pruefer": "Worksheet-Stil: Richtig/Falsch mit Korrektur, Lückentexte, Aufzählen (Englisch)",
+   "modus": "lernen",
+   "brueche": false,
+   "englisch": true,
+   "farben": {
+    "hell": {
+     "hdr-1": "#4a2a6e",
+     "hdr-2": "#653a96",
+     "primary": "#5a3385",
+     "primary-2": "#7344a8",
+     "pale": "#f3edf9",
+     "pale-2": "#f9f6fc",
+     "bg": "#f7f5f9",
+     "tip-ink": "#3d2259",
+     "c1": "#7344a8"
+    },
+    "dunkel": {
+     "hdr-1": "#2e1a45",
+     "hdr-2": "#47286a",
+     "primary": "#c9a6ef",
+     "primary-2": "#d8bdf3",
+     "on-primary": "#1a0f26",
+     "pale": "#2c2236",
+     "pale-2": "#241c2c",
+     "bg": "#120e16",
+     "card": "#1b1620",
+     "bar": "rgba(14,14,18,.95)",
+     "line": "#41354d",
+     "grid": "#2f2738",
+     "axis2": "#64566f",
+     "tip-ink": "#ead9fb",
+     "c1": "#c9a6ef"
+    }
+   },
+   "tiefe": 3
+  }
+ ]
+}

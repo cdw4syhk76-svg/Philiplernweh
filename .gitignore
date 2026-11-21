@@ -1,0 +1,4 @@
+dist/
+tests/bilder/
+__pycache__/
+*.pyc

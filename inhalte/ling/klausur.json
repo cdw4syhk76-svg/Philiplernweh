@@ -1,0 +1,503 @@
+{
+ "deckblatt": {
+  "fach": "Introduction to English Linguistics – Key Concepts",
+  "pruefer": "JLU Gießen",
+  "hilfsmittel": "none",
+  "bemerkungen": "Structure like the worksheet “Key Concepts in Linguistics”. Answer in English."
+ },
+ "aufgaben": [
+  {
+   "titel": "Dichotomies – true or false?",
+   "punkte": 6,
+   "intro": "Tick true or false. For every false statement write the correct answer.",
+   "teile": [
+    {
+     "punkte": 6,
+     "varianten": [
+      {
+       "id": "rf-1",
+       "unter": "synchronic-diachronic",
+       "text": "<p>Decide: true or false? If false, write the correct answer below.</p>",
+       "felder": [
+        {
+         "typ": "rf",
+         "aussagen": [
+          [
+           "The term synchronic describes a specific point in time, while diachronic describes language change through time.",
+           true
+          ],
+          [
+           "Function denotes a speaker’s ability to only be able to convey basic messages, while form denotes a mastery over the language.",
+           false
+          ],
+          [
+           "Applied linguistics refers to studies that still have real-life applications, ‘not applied’ refers to studies in the past that are not in use anymore.",
+           false
+          ]
+         ],
+         "p": 3,
+         "einzeln": true
+        },
+        {
+         "typ": "text",
+         "label": "Correct answer(s) for every false statement",
+         "p": 3,
+         "zeilen": 4
+        }
+       ],
+       "loesung": "<b>1.</b> TRUE<br><b>2.</b> FALSE – correct answer: <i>Form refers to the structure of language (sounds, word forms, sentence patterns); function refers to what a form is used for in communication (its purpose).</i><br><b>3.</b> FALSE – correct answer: <i>Applied linguistics uses linguistic findings to solve practical, real-life problems (e.g. language teaching, translation, speech therapy); not applied (theoretical) linguistics studies language for its own sake to describe and explain it.</i>"
+      },
+      {
+       "id": "rf-2",
+       "unter": "form-function",
+       "text": "<p>Decide: true or false? If false, write the correct answer below.</p>",
+       "felder": [
+        {
+         "typ": "rf",
+         "aussagen": [
+          [
+           "Diachronic linguistics describes a language at one specific point in time, while synchronic linguistics studies how it changes.",
+           false
+          ],
+          [
+           "Form refers to the structure of language, while function refers to what this structure is used for in communication.",
+           true
+          ],
+          [
+           "Theoretical linguistics studies language for its own sake, while applied linguistics uses its findings to solve real-life problems.",
+           true
+          ]
+         ],
+         "p": 3,
+         "einzeln": true
+        },
+        {
+         "typ": "text",
+         "label": "Correct answer(s) for every false statement",
+         "p": 3,
+         "zeilen": 4
+        }
+       ],
+       "loesung": "<b>1.</b> FALSE – correct answer: <i>Synchronic describes language at one specific point in time; diachronic describes language change through time.</i><br><b>2.</b> TRUE<br><b>3.</b> TRUE"
+      },
+      {
+       "id": "rf-3",
+       "unter": "applied-theoretical",
+       "text": "<p>Decide: true or false? If false, write the correct answer below.</p>",
+       "felder": [
+        {
+         "typ": "rf",
+         "aussagen": [
+          [
+           "A description of Old English grammar around the year 1000 is diachronic because Old English is no longer spoken.",
+           false
+          ],
+          [
+           "Form describes how fluently a speaker can use a language, function describes how many words he knows.",
+           false
+          ],
+          [
+           "Speech therapy and language teaching are examples of applied linguistics.",
+           true
+          ]
+         ],
+         "p": 3,
+         "einzeln": true
+        },
+        {
+         "typ": "text",
+         "label": "Correct answer(s) for every false statement",
+         "p": 3,
+         "zeilen": 4
+        }
+       ],
+       "loesung": "<b>1.</b> FALSE – correct answer: <i>Synchronic describes language at one specific point in time; diachronic describes language change through time.</i><br><b>2.</b> FALSE – correct answer: <i>Form refers to the structure of language (sounds, word forms, sentence patterns); function refers to what a form is used for in communication (its purpose).</i><br><b>3.</b> TRUE"
+      },
+      {
+       "id": "rf-4",
+       "unter": "dichotomies",
+       "text": "<p>Decide: true or false? If false, write the correct answer below.</p>",
+       "felder": [
+        {
+         "typ": "rf",
+         "aussagen": [
+          [
+           "Synchronic linguistics studies language at one specific point in time.",
+           true
+          ],
+          [
+           "One linguistic form, e.g. a question, can have several functions, e.g. a request or a complaint.",
+           true
+          ],
+          [
+           "‘Not applied’ linguistics refers to old theories that nobody uses anymore.",
+           false
+          ]
+         ],
+         "p": 3,
+         "einzeln": true
+        },
+        {
+         "typ": "text",
+         "label": "Correct answer(s) for every false statement",
+         "p": 3,
+         "zeilen": 4
+        }
+       ],
+       "loesung": "<b>1.</b> TRUE<br><b>2.</b> TRUE<br><b>3.</b> FALSE – correct answer: <i>Applied linguistics uses linguistic findings to solve practical, real-life problems (e.g. language teaching, translation, speech therapy); not applied (theoretical) linguistics studies language for its own sake to describe and explain it.</i>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "titel": "2.1 Structuralism",
+   "punkte": 5,
+   "teile": [
+    {
+     "punkte": 5,
+     "varianten": [
+      {
+       "id": "gap-struk-1",
+       "unter": "structuralism",
+       "text": "<p>This is a school of thought that stems from the work of <b>(1)</b> ______ (~1900). In structuralism, linguists are primarily concerned with the abstract language system shared by all members of a speech community, called <b>(2)</b> ______, and less so about <b>(3)</b> ______, which is about the concrete usage of language by the individual.</p><p>Figure: a circle divided in two – top half: a frog (the idea), bottom half: /frɒg/.<br><b>(4)</b> signifié (signified) = ______<br><b>(5)</b> ______ = the sound image, i.e. that which signifies</p>",
+       "felder": [
+        {
+         "typ": "wort",
+         "label": "(1)",
+         "loesung": [
+          "Ferdinand de Saussure",
+          "Saussure",
+          "de Saussure"
+         ],
+         "p": 1
+        },
+        {
+         "typ": "wort",
+         "label": "(2)",
+         "loesung": [
+          "langue"
+         ],
+         "p": 1
+        },
+        {
+         "typ": "wort",
+         "label": "(3)",
+         "loesung": [
+          "parole"
+         ],
+         "p": 1
+        },
+        {
+         "typ": "wort",
+         "label": "(4) signifié =",
+         "loesung": [
+          "concept",
+          "the concept",
+          "mental concept",
+          "idea",
+          "mental idea",
+          "that which is signified"
+         ],
+         "p": 1
+        },
+        {
+         "typ": "wort",
+         "label": "(5)",
+         "loesung": [
+          "signifiant",
+          "signifier",
+          "signifiant (signifier)"
+         ],
+         "p": 1
+        }
+       ],
+       "loesung": "(1) Ferdinand de Saussure · (2) langue · (3) parole · (4) the concept / mental idea, i.e. that which is signified · (5) signifiant (signifier)"
+      },
+      {
+       "id": "gap-struk-2",
+       "unter": "structuralism",
+       "text": "<p>The Swiss linguist <b>(1)</b> ______ is seen as the founder of structuralism. He distinguished between the system that all members of a speech community share, <b>(2)</b> ______, and the concrete language use of an individual speaker, <b>(3)</b> ______.</p><p>Figure: a circle divided in two – top half: a frog (the idea), bottom half: /frɒg/.<br><b>(4)</b> signifié (signified) = ______<br><b>(5)</b> ______ = the sound image, i.e. that which signifies</p>",
+       "felder": [
+        {
+         "typ": "wort",
+         "label": "(1)",
+         "loesung": [
+          "Ferdinand de Saussure",
+          "Saussure",
+          "de Saussure"
+         ],
+         "p": 1
+        },
+        {
+         "typ": "wort",
+         "label": "(2)",
+         "loesung": [
+          "langue"
+         ],
+         "p": 1
+        },
+        {
+         "typ": "wort",
+         "label": "(3)",
+         "loesung": [
+          "parole"
+         ],
+         "p": 1
+        },
+        {
+         "typ": "wort",
+         "label": "(4) signifié =",
+         "loesung": [
+          "concept",
+          "the concept",
+          "mental concept",
+          "idea",
+          "mental idea",
+          "that which is signified"
+         ],
+         "p": 1
+        },
+        {
+         "typ": "wort",
+         "label": "(5)",
+         "loesung": [
+          "signifiant",
+          "signifier",
+          "signifiant (signifier)"
+         ],
+         "p": 1
+        }
+       ],
+       "loesung": "(1) Ferdinand de Saussure · (2) langue · (3) parole · (4) the concept / mental idea, i.e. that which is signified · (5) signifiant (signifier)"
+      },
+      {
+       "id": "gap-struk-3",
+       "unter": "structuralism",
+       "text": "<p>Structuralists like <b>(1)</b> ______ focus on <b>(2)</b> ______ (the shared abstract system) rather than on <b>(3)</b> ______ (what a single person actually says or writes).</p><p>Figure: a circle divided in two – top half: a frog (the idea), bottom half: /frɒg/.<br><b>(4)</b> signifié (signified) = ______<br><b>(5)</b> ______ = the sound image, i.e. that which signifies</p>",
+       "felder": [
+        {
+         "typ": "wort",
+         "label": "(1)",
+         "loesung": [
+          "Ferdinand de Saussure",
+          "Saussure",
+          "de Saussure"
+         ],
+         "p": 1
+        },
+        {
+         "typ": "wort",
+         "label": "(2)",
+         "loesung": [
+          "langue"
+         ],
+         "p": 1
+        },
+        {
+         "typ": "wort",
+         "label": "(3)",
+         "loesung": [
+          "parole"
+         ],
+         "p": 1
+        },
+        {
+         "typ": "wort",
+         "label": "(4) signifié =",
+         "loesung": [
+          "concept",
+          "the concept",
+          "mental concept",
+          "idea",
+          "mental idea",
+          "that which is signified"
+         ],
+         "p": 1
+        },
+        {
+         "typ": "wort",
+         "label": "(5)",
+         "loesung": [
+          "signifiant",
+          "signifier",
+          "signifiant (signifier)"
+         ],
+         "p": 1
+        }
+       ],
+       "loesung": "(1) Ferdinand de Saussure · (2) langue · (3) parole · (4) the concept / mental idea, i.e. that which is signified · (5) signifiant (signifier)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "titel": "2.2 Formalism",
+   "punkte": 3,
+   "teile": [
+    {
+     "punkte": 3,
+     "varianten": [
+      {
+       "id": "gap-chom-1",
+       "unter": "formalism-chomsky",
+       "text": "<p>This school of thought is widely associated with <b>(1)</b> ______ work in the 1950s and 1960s. He views every human as being born with a <b>(2)</b> ______, i.e. humans are viewed as genetically predisposed to learn language. This is based on the theory of <b>(3)</b> ______ which consists of syntactic structures and constraints that are thought to be universal in human languages and, thus, innate.</p>",
+       "felder": [
+        {
+         "typ": "wort",
+         "label": "(1)",
+         "loesung": [
+          "Chomsky's",
+          "Chomsky",
+          "Noam Chomsky's",
+          "Noam Chomsky",
+          "Chomskys"
+         ],
+         "p": 1
+        },
+        {
+         "typ": "wort",
+         "label": "(2)",
+         "loesung": [
+          "language acquisition device",
+          "language acquisition device (LAD)",
+          "LAD"
+         ],
+         "p": 1
+        },
+        {
+         "typ": "wort",
+         "label": "(3)",
+         "loesung": [
+          "Universal Grammar",
+          "UG"
+         ],
+         "p": 1
+        }
+       ],
+       "loesung": "(1) Chomsky(’s) · (2) language acquisition device (LAD) · (3) Universal Grammar"
+      },
+      {
+       "id": "gap-chom-2",
+       "unter": "formalism-chomsky",
+       "text": "<p>According to <b>(1)</b> ______ (1950s/60s), children acquire their mother tongue so quickly because they are born with a <b>(2)</b> ______. It contains <b>(3)</b> ______: syntactic structures and constraints shared by all human languages.</p>",
+       "felder": [
+        {
+         "typ": "wort",
+         "label": "(1)",
+         "loesung": [
+          "Chomsky's",
+          "Chomsky",
+          "Noam Chomsky's",
+          "Noam Chomsky",
+          "Chomskys"
+         ],
+         "p": 1
+        },
+        {
+         "typ": "wort",
+         "label": "(2)",
+         "loesung": [
+          "language acquisition device",
+          "language acquisition device (LAD)",
+          "LAD"
+         ],
+         "p": 1
+        },
+        {
+         "typ": "wort",
+         "label": "(3)",
+         "loesung": [
+          "Universal Grammar",
+          "UG"
+         ],
+         "p": 1
+        }
+       ],
+       "loesung": "(1) Chomsky(’s) · (2) language acquisition device (LAD) · (3) Universal Grammar"
+      },
+      {
+       "id": "gap-chom-3",
+       "unter": "formalism-chomsky",
+       "text": "<p>Formalism in the 1950s and 1960s: <b>(1)</b> ______ claims that humans are genetically predisposed to learn language, because every human is born with a <b>(2)</b> ______ (LAD). The innate, universal syntactic structures are called <b>(3)</b> ______.</p>",
+       "felder": [
+        {
+         "typ": "wort",
+         "label": "(1)",
+         "loesung": [
+          "Chomsky's",
+          "Chomsky",
+          "Noam Chomsky's",
+          "Noam Chomsky",
+          "Chomskys"
+         ],
+         "p": 1
+        },
+        {
+         "typ": "wort",
+         "label": "(2)",
+         "loesung": [
+          "language acquisition device",
+          "language acquisition device (LAD)",
+          "LAD"
+         ],
+         "p": 1
+        },
+        {
+         "typ": "wort",
+         "label": "(3)",
+         "loesung": [
+          "Universal Grammar",
+          "UG"
+         ],
+         "p": 1
+        }
+       ],
+       "loesung": "(1) Chomsky(’s) · (2) language acquisition device (LAD) · (3) Universal Grammar"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "titel": "2.3 Formalism (Jakobson)",
+   "punkte": 3,
+   "teile": [
+    {
+     "punkte": 3,
+     "varianten": [
+      {
+       "id": "list-jak-1",
+       "unter": "formalism-jakobson",
+       "text": "<p>Formalism (Roman Jakobson 1920s): Name three linguistic disciplines that formalism heavily influenced.</p>",
+       "felder": [
+        {
+         "typ": "text",
+         "label": "1. / 2. / 3.",
+         "p": 3,
+         "zeilen": 3
+        }
+       ],
+       "loesung": "<ul><li>phonology (sound system)</li><li>morphology (structure of words)</li><li>syntax (structure of sentences)</li></ul><p>Also accepted: semantics, stylistics/poetics.</p>"
+      },
+      {
+       "id": "list-jak-2",
+       "unter": "formalism-jakobson",
+       "text": "<p>Roman Jakobson (1920s) and the Prague Linguistic Circle shaped modern linguistics. Name three linguistic disciplines that formalism heavily influenced and say in a few words what each studies.</p>",
+       "felder": [
+        {
+         "typ": "text",
+         "label": "1. / 2. / 3.",
+         "p": 3,
+         "zeilen": 3
+        }
+       ],
+       "loesung": "<ul><li>phonology (sound system)</li><li>morphology (structure of words)</li><li>syntax (structure of sentences)</li></ul><p>Also accepted: semantics, stylistics/poetics.</p>"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

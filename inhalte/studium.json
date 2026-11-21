@@ -1,0 +1,58 @@
+{
+ "semester": {
+  "kurs": "Demo",
+  "studiengang": "Anglistik – Introduction to English Linguistics",
+  "hochschule": "Justus-Liebig-Universität Gießen",
+  "semester": "Wintersemester 2026/27",
+  "beginn": "2026-10-12",
+  "ende": "2027-02-12",
+  "raum": "",
+  "leitung": "",
+  "ects_jahr": 60,
+  "ects_gesamt": 180,
+  "login": false
+ },
+ "module": [
+  {
+   "id": "ling1",
+   "name": "Introduction to English Linguistics",
+   "ects": 6,
+   "sem": [
+    1
+   ],
+   "teile": [
+    [
+     "Key Concepts in Linguistics",
+     "Seminar Gießen",
+     "ling"
+    ]
+   ],
+   "pruefung": "Klausur (Englisch): Richtig/Falsch mit Korrektur, Lückentexte, Aufzählen"
+  }
+ ],
+ "klausuren": [
+  {
+   "modul": "ling1",
+   "titel": "Introduction to English Linguistics",
+   "kurz": "Linguistics",
+   "beginn": "2027-02-08T10:00",
+   "ende": "2027-02-08T11:00",
+   "raum": "",
+   "teile": [
+    [
+     "Key Concepts in Linguistics",
+     "ling",
+     1,
+     "ling",
+     "Linguistics"
+    ]
+   ],
+   "faecher": [
+    "ling"
+   ],
+   "stoff": "Dichotomies · Schools of Thought",
+   "punkte": 17,
+   "minuten": 20
+  }
+ ]
+}

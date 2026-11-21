@@ -1,0 +1,2122 @@
+{
+"familien": [
+{
+"id": "ling:dichotomies:def",
+"f": "ling",
+"t": "dichotomies",
+"k": 1,
+"s": false,
+"y": "fam",
+"fam": 1,
+"z": "Knows what a dichotomy is",
+"a": [
+{
+"y": "mc",
+"p": "In linguistics, a dichotomy is …",
+"o": [
+[
+"a pair of opposite but complementary perspectives",
+true
+],
+[
+"a mistake that two linguists disagree about",
+false
+],
+[
+"a rule that is true in only some languages",
+false
+],
+[
+"a single word that has exactly two different meanings",
+false
+]
+],
+"de_hint": "In der Sprachwissenschaft ist eine Dichotomie …",
+"w": "Two sides, one object. · Zwei Seiten, ein Gegenstand.",
+"lvl": 1
+},
+{
+"y": "luecke",
+"p": "A dichotomy cuts a topic into [[0]] parts. The two sides are not right and wrong, but two different [[1]] on the same object: language.",
+"l": [
+[
+"two",
+"2"
+],
+[
+"perspectives",
+"perspective",
+"views",
+"ways of looking"
+]
+],
+"de_hint": "Eine Dichotomie teilt ein Thema in … Teile. Die Seiten sind zwei verschiedene … auf denselben Gegenstand.",
+"w": "two – perspectives. · zwei – Blickwinkel.",
+"lvl": 1
+},
+{
+"y": "liste",
+"p": "Name the three dichotomies of the worksheet.",
+"pk": [
+[
+"synchronic/diachronic",
+"synchronic diachronic",
+"synchronic",
+"diachronic"
+],
+[
+"form/function",
+"form function",
+"form",
+"function"
+],
+[
+"applied/theoretical",
+"applied",
+"theoretical",
+"not applied",
+"applied/not applied"
+]
+],
+"n": 3,
+"de_hint": "Nenne die drei Dichotomien des Arbeitsblatts.",
+"w": "synchronic/diachronic · form/function · applied/theoretical.",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "zuord",
+"p": "Which pair does the term belong to?",
+"k": [
+"synchronic / diachronic",
+"form / function",
+"theoretical / applied"
+],
+"e": [
+[
+"snapshot of a language",
+0
+],
+[
+"purpose of an utterance",
+1
+],
+[
+"speech therapy",
+2
+],
+[
+"language change",
+0
+],
+[
+"sentence structure",
+1
+],
+[
+"describing the system for its own sake",
+2
+]
+],
+"de_hint": "Zu welchem Paar gehört der Begriff?",
+"w": "",
+"lvl": 1
+},
+{
+"y": "block",
+"p": "True or false?",
+"aussagen": [
+[
+"The two sides of a dichotomy exclude each other – only one of them is correct.",
+false
+],
+[
+"Dichotomies help to look at language from two angles.",
+true
+],
+[
+"In a true/false task, a false statement needs a corrected answer.",
+true
+],
+[
+"Langue/parole is also a dichotomy.",
+true
+]
+],
+"de_hint": "Richtig oder falsch?",
+"w": "Both sides belong together. · Beide Seiten gehören zusammen.",
+"lvl": 1
+},
+{
+"y": "luecke",
+"p": "In the exam, if a statement is [[0]], you tick b and write the [[1]] answer on the line.",
+"l": [
+[
+"false",
+"wrong",
+"incorrect"
+],
+[
+"correct",
+"right",
+"corrected"
+]
+],
+"de_hint": "Ist eine Aussage …, kreuzt du b an und schreibst die … Antwort auf die Linie.",
+"w": "",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "reihe",
+"p": "Put the steps for a “True or false → correct answer” task in order.",
+"o": [
+"find the two key terms",
+"recall the definition of each term",
+"compare: does the statement match?",
+"write a full correct sentence for both terms"
+],
+"de_hint": "Bringe die Schritte in die richtige Reihenfolge.",
+"w": "Terms – definitions – compare – correct both. · Begriffe – Definitionen – vergleichen – beide korrigieren.",
+"lvl": 2
+},
+{
+"y": "kurz",
+"p": "Complete: the Greek word “dicha” means “in …”.",
+"ok": [
+"two",
+"zwei"
+],
+"de_hint": "Ergänze: das griechische „dicha“ heißt „in …“.",
+"w": "",
+"lvl": 1
+},
+{
+"y": "mc",
+"p": "Which is NOT a dichotomy in linguistics?",
+"o": [
+[
+"phonology / morphology",
+true
+],
+[
+"langue / parole",
+false
+],
+[
+"competence / performance",
+false
+],
+[
+"descriptive / prescriptive",
+false
+]
+],
+"de_hint": "Was ist KEINE Dichotomie?",
+"w": "Phonology and morphology are two disciplines, not two perspectives on the same object. · Zwei Disziplinen, keine zwei Blickwinkel.",
+"lvl": 2
+}
+]
+},
+{
+"id": "ling:synchronic-diachronic:sd",
+"f": "ling",
+"t": "synchronic-diachronic",
+"k": 1,
+"s": true,
+"y": "fam",
+"fam": 1,
+"z": "Distinguishes synchronic and diachronic",
+"a": [
+{
+"y": "block",
+"p": "Worksheet 1.1 – true or false?",
+"aussagen": [
+[
+"The term synchronic describes a specific point in time, while diachronic describes language change through time.",
+true
+]
+],
+"de_hint": "Arbeitsblatt 1.1 – richtig oder falsch?",
+"w": "TRUE – tick a, nothing to correct. · RICHTIG – a ankreuzen.",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "luecke",
+"p": "The term [[0]] describes a specific point in time, while [[1]] describes language change through time.",
+"l": [
+[
+"synchronic"
+],
+[
+"diachronic"
+]
+],
+"de_hint": "Der Begriff … beschreibt einen Zeitpunkt, … den Sprachwandel über die Zeit.",
+"w": "synchronic – diachronic.",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "luecke",
+"p": "Synchronic linguistics studies language at one specific [[0]] in time, like a [[1]].",
+"l": [
+[
+"point",
+"moment"
+],
+[
+"snapshot",
+"photo",
+"photograph",
+"picture"
+]
+],
+"de_hint": "Synchron: Sprache zu einem bestimmten … in der Zeit, wie eine ….",
+"w": "",
+"lvl": 1
+},
+{
+"y": "luecke",
+"p": "Diachronic (or [[0]]) linguistics studies how language [[1]] through time.",
+"l": [
+[
+"historical",
+"historic"
+],
+[
+"changes",
+"develops",
+"evolves"
+]
+],
+"de_hint": "Diachrone (oder …) Linguistik untersucht, wie Sprache sich über die Zeit ….",
+"w": "",
+"lvl": 2
+},
+{
+"y": "luecke",
+"p": "The prefix “syn” means [[0]], the prefix “dia” means [[1]]; “chronos” means [[2]].",
+"l": [
+[
+"together",
+"same",
+"with"
+],
+[
+"through",
+"across"
+],
+[
+"time"
+]
+],
+"de_hint": "„syn“ heißt …, „dia“ heißt …, „chronos“ heißt ….",
+"w": "syn = together, dia = through, chronos = time.",
+"lvl": 1
+},
+{
+"y": "zuord",
+"p": "Synchronic or diachronic?",
+"k": [
+"synchronic",
+"diachronic"
+],
+"e": [
+[
+"the sound system of English today",
+0
+],
+[
+"how “nice” changed from “foolish” to “pleasant”",
+1
+],
+[
+"Old English grammar around the year 1000",
+0
+],
+[
+"from “thou art” to “you are”",
+1
+],
+[
+"slang of London teenagers in 2026",
+0
+],
+[
+"the Great Vowel Shift",
+1
+]
+],
+"de_hint": "Synchron oder diachron?",
+"w": "One moment = synchronic, change = diachronic. · Ein Moment = synchron, Wandel = diachron.",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "mc",
+"p": "A linguist describes the grammar of Old English around the year 1000. This study is …",
+"o": [
+[
+"synchronic, because it looks at one point in time",
+true
+],
+[
+"diachronic, because Old English is an old language",
+false
+],
+[
+"diachronic, because the grammar has changed since",
+false
+],
+[
+"neither, because Old English is no longer spoken",
+false
+]
+],
+"de_hint": "Ein Linguist beschreibt die Grammatik des Altenglischen um 1000. Diese Studie ist …",
+"w": "Old ≠ diachronic. · Alt ≠ diachron.",
+"lvl": 3
+},
+{
+"y": "mc",
+"p": "Which question is diachronic?",
+"o": [
+[
+"How did the meaning of “girl” develop?",
+true
+],
+[
+"What does “girl” mean in English today?",
+false
+],
+[
+"How is “girl” pronounced in London today?",
+false
+],
+[
+"Which words rhyme with “girl” in English?",
+false
+]
+],
+"de_hint": "Welche Frage ist diachron?",
+"w": "",
+"lvl": 1
+},
+{
+"y": "block",
+"p": "True or false?",
+"aussagen": [
+[
+"Synchronic means the same as “present-day”.",
+false
+],
+[
+"Saussure compared the synchronic view to the position on a chessboard.",
+true
+],
+[
+"Diachronic linguistics compares several stages of a language.",
+true
+],
+[
+"“Diachronic” means “at the same time”.",
+false
+]
+],
+"de_hint": "Richtig oder falsch?",
+"w": "",
+"lvl": 2
+},
+{
+"y": "kurz",
+"p": "Complete Saussure’s comparison: the current position on a chessboard corresponds to the … view.",
+"ok": [
+"synchronic",
+"synchronic view"
+],
+"de_hint": "Die aktuelle Stellung auf dem Schachbrett entspricht der … Sicht.",
+"w": "",
+"lvl": 2
+},
+{
+"y": "rev",
+"p": "Explain the difference between synchronic and diachronic linguistics with the word “nice”.",
+"l": "Synchronic: describe what “nice” means at one point in time, e.g. today “pleasant, kind”, or around 1300 “foolish”. Diachronic: describe how its meaning changed through time, from “foolish” (Middle English) via “precise” to “pleasant” today.",
+"pk": [
+"synchronic = one point in time (snapshot)",
+"diachronic = change through time",
+"nice: foolish → pleasant"
+],
+"de_hint": "Erkläre den Unterschied am Wort „nice“.",
+"w": "",
+"lvl": 2
+}
+]
+},
+{
+"id": "ling:form-function:ff",
+"f": "ling",
+"t": "form-function",
+"k": 1,
+"s": true,
+"y": "fam",
+"fam": 1,
+"z": "Distinguishes form and function",
+"a": [
+{
+"y": "block",
+"p": "Worksheet 1.2 – true or false?",
+"aussagen": [
+[
+"Function denotes a speaker’s ability to only be able to convey basic messages, while form denotes a mastery over the language.",
+false
+]
+],
+"de_hint": "Arbeitsblatt 1.2 – richtig oder falsch?",
+"w": "FALSE – tick b and correct it. · FALSCH – b ankreuzen und korrigieren.",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "rev",
+"p": "Worksheet 1.2 is false. Write the correct answer.",
+"l": "Form refers to the structure of language – its sounds, word forms and sentence patterns (how something is said). Function refers to what a form is used for in communication – its purpose (e.g. a question used as a request).",
+"pk": [
+"form = structure of language (sounds, words, sentences)",
+"function = purpose / use in communication",
+"not about the speaker’s skill or mastery"
+],
+"de_hint": "Arbeitsblatt 1.2 ist falsch. Schreibe die richtige Antwort.",
+"w": "",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "luecke",
+"p": "Correct answer 1.2: [[0]] refers to the structure of language, while [[1]] refers to what this structure is used for in communication.",
+"l": [
+[
+"form"
+],
+[
+"function"
+]
+],
+"de_hint": "Richtige Antwort 1.2: … bezeichnet die Struktur, … wozu sie verwendet wird.",
+"w": "",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "luecke",
+"p": "Form is the [[0]] of language: its sounds, word forms and sentence patterns. Function is its [[1]] in communication.",
+"l": [
+[
+"structure",
+"shape"
+],
+[
+"purpose",
+"use",
+"job",
+"role"
+]
+],
+"de_hint": "Form ist die … der Sprache, Funktion ihr … in der Kommunikation.",
+"w": "structure – purpose.",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "luecke",
+"p": "“Can you open the window?” has the form of a [[0]], but its function is usually a [[1]].",
+"l": [
+[
+"question",
+"interrogative",
+"interrogative sentence",
+"yes/no question",
+"yes-no question"
+],
+[
+"request",
+"polite request"
+]
+],
+"de_hint": "„Can you open the window?“ hat die Form einer …, die Funktion ist meist eine ….",
+"w": "Form: question · function: request.",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "zuord",
+"p": "Form or function?",
+"k": [
+"form",
+"function"
+],
+"e": [
+[
+"the past tense ending -ed",
+0
+],
+[
+"warning someone",
+1
+],
+[
+"inverted word order in questions",
+0
+],
+[
+"greeting a friend",
+1
+],
+[
+"the sound /frɒg/",
+0
+],
+[
+"complaining about the heat",
+1
+]
+],
+"de_hint": "Form oder Funktion?",
+"w": "Form = what it looks like, function = what it does.",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "mc",
+"p": "“It’s hot in here.” said to someone near the window. Which statement is correct?",
+"o": [
+[
+"its form is a statement, its function is a request",
+true
+],
+[
+"its form is a request, its function is a statement",
+false
+],
+[
+"its form and its function are both questions",
+false
+],
+[
+"it has a grammatical form but no communicative function",
+false
+]
+],
+"de_hint": "„It’s hot in here.“ zu jemandem am Fenster. Was stimmt?",
+"w": "",
+"lvl": 2
+},
+{
+"y": "mc",
+"p": "What is wrong with worksheet statement 1.2?",
+"o": [
+[
+"it mixes up form and function with the speaker’s skill",
+true
+],
+[
+"form and function have been swapped by mistake",
+false
+],
+[
+"function describes the sounds of a language",
+false
+],
+[
+"form only exists in written texts, never in spoken language",
+false
+]
+],
+"de_hint": "Was ist an Aussage 1.2 falsch?",
+"w": "",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "block",
+"p": "True or false?",
+"aussagen": [
+[
+"One form can have several functions.",
+true
+],
+[
+"One function can be expressed by several forms.",
+true
+],
+[
+"Form describes how well someone masters a language.",
+false
+],
+[
+"Every question is used to ask for information.",
+false
+]
+],
+"de_hint": "Richtig oder falsch?",
+"w": "",
+"lvl": 2
+},
+{
+"y": "liste",
+"p": "Give three different forms that can all function as a request to open the window.",
+"pk": [
+[
+"open the window",
+"imperative"
+],
+[
+"can you",
+"could you",
+"would you",
+"question"
+],
+[
+"it is hot",
+"it's hot",
+"statement",
+"declarative"
+]
+],
+"n": 3,
+"de_hint": "Nenne drei Formen, die alle als Bitte funktionieren.",
+"w": "imperative · question · statement.",
+"lvl": 3
+},
+{
+"y": "kurz",
+"p": "Complete: form answers the question “how?”, function answers the question “what …?”.",
+"ok": [
+"for",
+"what for"
+],
+"de_hint": "Form: „wie?“, Funktion: „wozu?“ (englisch: what …?)",
+"w": "",
+"lvl": 1
+}
+]
+},
+{
+"id": "ling:applied-theoretical:at",
+"f": "ling",
+"t": "applied-theoretical",
+"k": 1,
+"s": true,
+"y": "fam",
+"fam": 1,
+"z": "Distinguishes applied and theoretical linguistics",
+"a": [
+{
+"y": "block",
+"p": "Worksheet 1.3 – true or false?",
+"aussagen": [
+[
+"Applied linguistics refers to studies that still have real-life applications, ‘not applied’ refers to studies in the past that are not in use anymore.",
+false
+]
+],
+"de_hint": "Arbeitsblatt 1.3 – richtig oder falsch?",
+"w": "FALSE – it is about the goal, not about time. · FALSCH – es geht ums Ziel, nicht um die Zeit.",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "rev",
+"p": "Worksheet 1.3 is false. Write the correct answer.",
+"l": "Applied linguistics uses the findings of linguistics to solve practical, real-life problems, e.g. language teaching, translation or speech therapy. “Not applied” (theoretical) linguistics studies language for its own sake to describe and explain how it works. It is not about old studies.",
+"pk": [
+"applied = uses findings to solve real-life problems",
+"example: teaching, translation, speech therapy",
+"not applied = theoretical, studies language for its own sake",
+"not about past vs. present"
+],
+"de_hint": "Aussage 1.3 ist falsch. Schreibe die richtige Antwort.",
+"w": "",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "luecke",
+"p": "Applied linguistics uses linguistic findings to solve [[0]] problems. “Not applied” or [[1]] linguistics studies language for its own [[2]].",
+"l": [
+[
+"practical",
+"real-life",
+"real life",
+"everyday"
+],
+[
+"theoretical",
+"general",
+"pure"
+],
+[
+"sake"
+]
+],
+"de_hint": "Angewandte Linguistik löst … Probleme. „Nicht angewandte“ oder … Linguistik erforscht Sprache um ihrer selbst ….",
+"w": "practical – theoretical – sake.",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "luecke",
+"p": "Theoretical linguistics wants to [[0]] and [[1]] how the language system works.",
+"l": [
+[
+"describe"
+],
+[
+"explain"
+]
+],
+"de_hint": "Theoretische Linguistik will … und …, wie das Sprachsystem funktioniert.",
+"w": "",
+"lvl": 2
+},
+{
+"y": "zuord",
+"p": "Applied or theoretical?",
+"k": [
+"applied",
+"theoretical"
+],
+"e": [
+[
+"a method to teach the English “th”",
+0
+],
+[
+"describing English word order",
+1
+],
+[
+"helping a child who cannot pronounce /r/",
+0
+],
+[
+"a theory of how sentences are built",
+1
+],
+[
+"finding the author of an anonymous letter",
+0
+],
+[
+"describing the sound system of English",
+1
+]
+],
+"de_hint": "Angewandt oder theoretisch?",
+"w": "",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "liste",
+"p": "Name three fields of applied linguistics.",
+"pk": [
+[
+"language teaching",
+"teaching",
+"foreign language teaching"
+],
+[
+"translation",
+"translating",
+"interpreting"
+],
+[
+"speech therapy",
+"therapy"
+],
+[
+"forensic linguistics",
+"forensic"
+],
+[
+"lexicography",
+"dictionaries",
+"dictionary"
+]
+],
+"n": 3,
+"de_hint": "Nenne drei Bereiche der angewandten Linguistik.",
+"w": "",
+"lvl": 1
+},
+{
+"y": "mc",
+"p": "What is the real difference between applied and theoretical linguistics?",
+"o": [
+[
+"the goal: solving practical problems vs. understanding language",
+true
+],
+[
+"the time: current studies vs. studies from the past",
+false
+],
+[
+"the language: English vs. other languages",
+false
+],
+[
+"the method: listening to speakers vs. reading written texts",
+false
+]
+],
+"de_hint": "Was ist der eigentliche Unterschied?",
+"w": "",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "mc",
+"p": "A researcher develops a theory of how English questions are formed. This is …",
+"o": [
+[
+"theoretical linguistics",
+true
+],
+[
+"applied linguistics",
+false
+],
+[
+"speech therapy",
+false
+],
+[
+"forensic linguistics and lexicography",
+false
+]
+],
+"de_hint": "Eine Forscherin entwickelt eine Theorie zur Bildung englischer Fragen. Das ist …",
+"w": "",
+"lvl": 1
+},
+{
+"y": "block",
+"p": "True or false?",
+"aussagen": [
+[
+"Theoretical linguistics only studies old texts.",
+false
+],
+[
+"Translation is a field of applied linguistics.",
+true
+],
+[
+"Applied linguistics builds on the results of theoretical linguistics.",
+true
+],
+[
+"“Not applied” linguistics is no longer in use.",
+false
+]
+],
+"de_hint": "Richtig oder falsch?",
+"w": "",
+"lvl": 1
+},
+{
+"y": "kurz",
+"p": "Complete: speech therapy, translation and language teaching are fields of … linguistics.",
+"ok": [
+"applied"
+],
+"de_hint": "Sprachtherapie, Übersetzen und Sprachunterricht gehören zur … Linguistik.",
+"w": "",
+"lvl": 1
+}
+]
+},
+{
+"id": "ling:structuralism:lp",
+"f": "ling",
+"t": "structuralism",
+"k": 2,
+"s": true,
+"y": "fam",
+"fam": 1,
+"z": "Knows structuralism, langue and parole",
+"a": [
+{
+"y": "luecke",
+"p": "Structuralism: This is a school of thought that stems from the work of [[0]] (~1900). In structuralism, linguists are primarily concerned with the abstract language system shared by all members of a speech community, called [[1]], and less so about [[2]], which is about the concrete usage of language by the individual.",
+"l": [
+[
+"Ferdinand de Saussure",
+"Saussure",
+"de Saussure",
+"F. de Saussure"
+],
+[
+"langue"
+],
+[
+"parole"
+]
+],
+"de_hint": "Lückentext 2.1 des Arbeitsblatts.",
+"w": "Saussure – langue – parole.",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "luecke",
+"p": "Structuralism stems from the work of [[0]] around [[1]].",
+"l": [
+[
+"Ferdinand de Saussure",
+"Saussure",
+"de Saussure"
+],
+[
+"1900"
+]
+],
+"de_hint": "Der Strukturalismus geht auf … um … zurück.",
+"w": "",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "luecke",
+"p": "[[0]] is the abstract language system shared by a speech community; [[1]] is the concrete usage of language by the individual.",
+"l": [
+[
+"langue"
+],
+[
+"parole"
+]
+],
+"de_hint": "… ist das gemeinsame System; … der konkrete Gebrauch des Einzelnen.",
+"w": "",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "luecke",
+"p": "Saussure’s lectures were published after his death by his [[0]] in [[1]] as the “Course in General Linguistics”.",
+"l": [
+[
+"students",
+"pupils"
+],
+[
+"1916"
+]
+],
+"de_hint": "Saussures Vorlesungen wurden nach seinem Tod von seinen … im Jahr … veröffentlicht.",
+"w": "",
+"lvl": 2
+},
+{
+"y": "luecke",
+"p": "Structuralists are [[0]] concerned with langue and [[1]] so with parole.",
+"l": [
+[
+"primarily",
+"mainly",
+"mostly",
+"chiefly"
+],
+[
+"less"
+]
+],
+"de_hint": "Strukturalisten beschäftigen sich … mit langue und … mit parole.",
+"w": "",
+"lvl": 1
+},
+{
+"y": "zuord",
+"p": "Langue or parole?",
+"k": [
+"langue",
+"parole"
+],
+"e": [
+[
+"the grammar rules of English",
+0
+],
+[
+"a text message Anna writes",
+1
+],
+[
+"the sound system shared by all speakers",
+0
+],
+[
+"a slip of the tongue in a talk",
+1
+],
+[
+"the vocabulary of a speech community",
+0
+],
+[
+"Ben’s phone call this morning",
+1
+]
+],
+"de_hint": "Langue oder parole?",
+"w": "System = langue, concrete use = parole.",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "mc",
+"p": "Who is the founder of structuralism in linguistics?",
+"o": [
+[
+"Ferdinand de Saussure",
+true
+],
+[
+"Noam Chomsky",
+false
+],
+[
+"Roman Jakobson",
+false
+],
+[
+"Nikolai Sergeyevich Trubetzkoy",
+false
+]
+],
+"de_hint": "Wer begründete den Strukturalismus?",
+"w": "",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "mc",
+"p": "Parole is best described as …",
+"o": [
+[
+"the concrete usage of language by the individual",
+true
+],
+[
+"the abstract system shared by a speech community",
+false
+],
+[
+"the innate grammar every child is born with",
+false
+],
+[
+"the historical development of a language over the centuries",
+false
+]
+],
+"de_hint": "Parole beschreibt man am besten als …",
+"w": "",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "block",
+"p": "True or false?",
+"aussagen": [
+[
+"Langue is social: it is shared by the whole speech community.",
+true
+],
+[
+"Structuralists are mainly interested in parole.",
+false
+],
+[
+"For Saussure, a sign has value through its differences to other signs.",
+true
+],
+[
+"Saussure was an American linguist of the 1950s.",
+false
+]
+],
+"de_hint": "Richtig oder falsch?",
+"w": "",
+"lvl": 2
+},
+{
+"y": "kurz",
+"p": "Complete the analogy: langue is to parole as the rules of football are to a single …",
+"ok": [
+"match",
+"game"
+],
+"de_hint": "Langue verhält sich zu parole wie die Fußballregeln zu einem einzelnen …",
+"w": "",
+"lvl": 1
+},
+{
+"y": "rev",
+"p": "Explain the difference between langue and parole and say which one structuralists focus on.",
+"l": "Langue is the abstract language system (signs and rules) shared by all members of a speech community. Parole is the concrete usage of language by an individual, e.g. one utterance. Structuralists (Saussure) are primarily concerned with langue.",
+"pk": [
+"langue = abstract system shared by community",
+"parole = concrete individual usage",
+"focus of structuralism: langue"
+],
+"de_hint": "Erkläre langue und parole und den Schwerpunkt des Strukturalismus.",
+"w": "",
+"lvl": 2,
+"klausur": true
+}
+]
+},
+{
+"id": "ling:linguistic-sign:zeichen",
+"f": "ling",
+"t": "linguistic-sign",
+"k": 2,
+"s": true,
+"y": "fam",
+"fam": 1,
+"z": "Knows signifié and signifiant",
+"a": [
+{
+"y": "beschr",
+"p": "Label Saussure’s model of the sign (worksheet 2.1).",
+"slots": [
+"signifié (concept)",
+"signifiant (sound image)"
+],
+"extra": [
+"referent (real frog)",
+"parole"
+],
+"bild": "<svg viewBox=\"0 0 360 250\" role=\"img\" aria-label=\"Schaubild zum Beschriften\"><circle cx=\"100\" cy=\"125\" r=\"92\" style=\"fill:var(--dg-soft);stroke:var(--dg-b)\" stroke-width=\"2\"/><line x1=\"8\" y1=\"125\" x2=\"192\" y2=\"125\" style=\"stroke:var(--dg-b)\" stroke-width=\"2\"/><text x=\"100\" y=\"79.5\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" style=\"fill:var(--dg-ink, var(--ink))\">concept: FROG</text><text x=\"100\" y=\"177.0\" text-anchor=\"middle\" font-size=\"20\" font-weight=\"700\" style=\"fill:var(--dg-ink, var(--ink))\">/frɒg/</text><line x1=\"184\" y1=\"80\" x2=\"214\" y2=\"66\" style=\"stroke:var(--dg-b)\" stroke-width=\"2\"/><line x1=\"184\" y1=\"170\" x2=\"214\" y2=\"184\" style=\"stroke:var(--dg-b)\" stroke-width=\"2\"/><rect x=\"216\" y=\"40\" width=\"140\" height=\"52\" rx=\"10\" style=\"fill:var(--dg-soft);stroke:var(--dg-a)\" stroke-width=\"2\"/><g class=\"dg-m\" data-m=\"1\"><circle cx=\"286.0\" cy=\"66.0\" r=\"15\" style=\"fill:var(--dg-a)\"/><text x=\"286.0\" y=\"71.5\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"800\" style=\"fill:var(--dg-on)\">1</text></g><rect x=\"216\" y=\"158\" width=\"140\" height=\"52\" rx=\"10\" style=\"fill:var(--dg-bg);stroke:var(--dg-a)\" stroke-width=\"2\"/><g class=\"dg-m\" data-m=\"2\"><circle cx=\"286.0\" cy=\"184.0\" r=\"15\" style=\"fill:var(--dg-a)\"/><text x=\"286.0\" y=\"189.5\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"800\" style=\"fill:var(--dg-on)\">2</text></g></svg>",
+"vb": [
+360.0,
+250.0
+],
+"de_hint": "Beschrifte Saussures Zeichenmodell.",
+"w": "Top: signifié = concept. Bottom: signifiant = sound image.",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "luecke",
+"p": "signifié (signified) = the [[0]], i.e. that which is signified. [[1]] (signifier) = the sound image, i.e. that which signifies.",
+"l": [
+[
+"concept",
+"mental concept",
+"idea",
+"mental idea",
+"mental image"
+],
+[
+"signifiant"
+]
+],
+"de_hint": "Abbildung in 2.1: signifié = das …; … = das Lautbild.",
+"w": "concept – signifiant.",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "luecke",
+"p": "Every linguistic sign has two sides: the [[0]], which is the concept, and the [[1]], which is the sound image.",
+"l": [
+[
+"signifié",
+"signifie",
+"signified"
+],
+[
+"signifiant",
+"signifier"
+]
+],
+"de_hint": "Jedes Zeichen hat zwei Seiten: das … (Konzept) und das … (Lautbild).",
+"w": "",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "luecke",
+"p": "For the word “frog”, the sound image /frɒg/ is the [[0]], and the idea of a small green jumping animal is the [[1]].",
+"l": [
+[
+"signifiant",
+"signifier"
+],
+[
+"signifié",
+"signifie",
+"signified"
+]
+],
+"de_hint": "Bei „frog“ ist /frɒg/ das …, die Vorstellung des Tieres das ….",
+"w": "",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "luecke",
+"p": "The link between signifiant and signifié is [[0]]: there is no [[1]] connection between sounds and concept.",
+"l": [
+[
+"arbitrary"
+],
+[
+"natural"
+]
+],
+"de_hint": "Die Verbindung ist …: Es gibt keine … Verbindung.",
+"w": "arbitrary – natural.",
+"lvl": 2
+},
+{
+"y": "mc",
+"p": "What is the signifié of the sign “frog”?",
+"o": [
+[
+"the concept or mental idea of a frog",
+true
+],
+[
+"the real frog sitting in the pond",
+false
+],
+[
+"the sound sequence /frɒg/",
+false
+],
+[
+"the written letters f-r-o-g on a page of a book",
+false
+]
+],
+"de_hint": "Was ist das signifié von „frog“?",
+"w": "Concept, not the real animal. · Konzept, nicht das Tier.",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "mc",
+"p": "Why do English speakers say “frog”, Germans “Frosch” and French speakers “grenouille”?",
+"o": [
+[
+"because the link between sound and concept is arbitrary",
+true
+],
+[
+"because frogs sound different in each country",
+false
+],
+[
+"because German and French are older languages than English",
+false
+],
+[
+"because each language uses a different concept of frog",
+false
+]
+],
+"de_hint": "Warum sagt man frog, Frosch und grenouille?",
+"w": "",
+"lvl": 2
+},
+{
+"y": "zuord",
+"p": "Signifié or signifiant?",
+"k": [
+"signifié",
+"signifiant"
+],
+"e": [
+[
+"the idea of a tree",
+0
+],
+[
+"/triː/",
+1
+],
+[
+"that which signifies",
+1
+],
+[
+"that which is signified",
+0
+],
+[
+"the sound image",
+1
+],
+[
+"the concept",
+0
+]
+],
+"de_hint": "Signifié oder signifiant?",
+"w": "",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "block",
+"p": "True or false?",
+"aussagen": [
+[
+"Signifié and signifiant are like the two sides of a sheet of paper.",
+true
+],
+[
+"The signifiant is the physical sound wave in the air.",
+false
+],
+[
+"The sign belongs to langue because it is a convention of the community.",
+true
+],
+[
+"The real object a word refers to is the signifié.",
+false
+]
+],
+"de_hint": "Richtig oder falsch?",
+"w": "Both sides are mental; the real object is the referent.",
+"lvl": 3
+},
+{
+"y": "kurz",
+"p": "Complete: the signifiant is the sound …",
+"ok": [
+"image",
+"image /frɒg/"
+],
+"de_hint": "Ergänze: Das signifiant ist das Laut…",
+"w": "",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "rev",
+"p": "Explain Saussure’s model of the linguistic sign with the example “frog”.",
+"l": "A linguistic sign consists of two inseparable sides: the signifié (signified), the concept or mental idea of a frog, and the signifiant (signifier), the sound image /frɒg/. The link between them is arbitrary – German uses /frɔʃ/ for the same concept.",
+"pk": [
+"signifié = concept (idea of frog)",
+"signifiant = sound image /frɒg/",
+"two inseparable sides",
+"link is arbitrary"
+],
+"de_hint": "Erkläre Saussures Zeichenmodell am Beispiel „frog“.",
+"w": "",
+"lvl": 3,
+"klausur": true
+}
+]
+},
+{
+"id": "ling:formalism-chomsky:lad",
+"f": "ling",
+"t": "formalism-chomsky",
+"k": 2,
+"s": true,
+"y": "fam",
+"fam": 1,
+"z": "Knows Chomsky, LAD and Universal Grammar",
+"a": [
+{
+"y": "luecke",
+"p": "Formalism: This school of thought is widely associated with [[0]] work in the 1950s and 1960s. He views every human as being born with a [[1]], i.e. humans are viewed as genetically predisposed to learn language. This is based on the theory of [[2]] which consists of syntactic structures and constraints that are thought to be universal in human languages and, thus, innate.",
+"l": [
+[
+"Chomsky's",
+"Chomsky",
+"Noam Chomsky's",
+"Noam Chomsky",
+"Chomskys"
+],
+[
+"language acquisition device",
+"language acquisition device (LAD)",
+"LAD"
+],
+[
+"Universal Grammar",
+"UG",
+"universal grammar (UG)"
+]
+],
+"de_hint": "Lückentext 2.2 des Arbeitsblatts.",
+"w": "Chomsky's – language acquisition device (LAD) – Universal Grammar.",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "luecke",
+"p": "Formalism is widely associated with [[0]] work in the [[1]] and 1960s.",
+"l": [
+[
+"Chomsky's",
+"Chomsky",
+"Noam Chomsky's",
+"Noam Chomsky"
+],
+[
+"1950s",
+"1950"
+]
+],
+"de_hint": "Der Formalismus wird mit … Arbeiten der … und 1960er verbunden.",
+"w": "",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "luecke",
+"p": "Every human is born with a [[0]] (LAD): humans are genetically [[1]] to learn language.",
+"l": [
+[
+"language acquisition device"
+],
+[
+"predisposed",
+"prepared",
+"programmed"
+]
+],
+"de_hint": "Jeder Mensch wird mit einem … geboren: Menschen sind genetisch … .",
+"w": "",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "luecke",
+"p": "Universal Grammar consists of [[0]] structures and constraints that are thought to be [[1]] in human languages and, thus, [[2]].",
+"l": [
+[
+"syntactic"
+],
+[
+"universal"
+],
+[
+"innate",
+"inborn"
+]
+],
+"de_hint": "Universalgrammatik besteht aus … Strukturen und Beschränkungen, die als … und damit … gelten.",
+"w": "syntactic – universal – innate.",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "luecke",
+"p": "Chomsky distinguishes [[0]], the speaker’s unconscious knowledge of grammar, from [[1]], the actual use of language.",
+"l": [
+[
+"competence"
+],
+[
+"performance"
+]
+],
+"de_hint": "Chomsky unterscheidet … (Wissen) und … (Gebrauch).",
+"w": "",
+"lvl": 2
+},
+{
+"y": "mc",
+"p": "What does LAD stand for?",
+"o": [
+[
+"language acquisition device",
+true
+],
+[
+"language analysis domain",
+false
+],
+[
+"linguistic accuracy degree",
+false
+],
+[
+"learned acquisition data set",
+false
+]
+],
+"de_hint": "Wofür steht LAD?",
+"w": "",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "mc",
+"p": "Which observation supports Chomsky’s idea of an innate LAD?",
+"o": [
+[
+"a child says “I goed”, a form it never heard",
+true
+],
+[
+"children always copy their parents exactly",
+false
+],
+[
+"adults learn new languages faster than children",
+false
+],
+[
+"all children learn English as their first language",
+false
+]
+],
+"de_hint": "Welche Beobachtung stützt Chomskys Idee?",
+"w": "They build rules themselves. · Sie bilden Regeln selbst.",
+"lvl": 3
+},
+{
+"y": "mc",
+"p": "Universal Grammar means that …",
+"o": [
+[
+"all human languages share basic innate structures",
+true
+],
+[
+"all human languages have identical grammars",
+false
+],
+[
+"English grammar is used all over the world",
+false
+],
+[
+"grammar must be taught at school before it can be learned",
+false
+]
+],
+"de_hint": "Universalgrammatik bedeutet, dass …",
+"w": "",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "block",
+"p": "True or false?",
+"aussagen": [
+[
+"Chomsky’s Syntactic Structures appeared in 1957.",
+true
+],
+[
+"According to Chomsky, language is learned only by imitation.",
+false
+],
+[
+"Universal Grammar is thought to be innate.",
+true
+],
+[
+"Chomsky is the founder of structuralism.",
+false
+]
+],
+"de_hint": "Richtig oder falsch?",
+"w": "",
+"lvl": 2
+},
+{
+"y": "kurz",
+"p": "Complete: Chomsky’s theory that every human is born with grammatical knowledge is called Universal …",
+"ok": [
+"Grammar"
+],
+"de_hint": "Ergänze: Universal …",
+"w": "",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "rev",
+"p": "Explain Chomsky’s idea of the language acquisition device.",
+"l": "Chomsky (1950s/60s) claims that every human is born with a language acquisition device: humans are genetically predisposed to learn language. It is based on Universal Grammar, i.e. syntactic structures and constraints that are universal in human languages and therefore innate. That explains why children learn grammar fast and from limited input.",
+"pk": [
+"every human born with LAD",
+"genetically predisposed",
+"based on Universal Grammar (universal, innate syntactic structures)",
+"children learn fast from limited input"
+],
+"de_hint": "Erkläre Chomskys Spracherwerbsapparat.",
+"w": "",
+"lvl": 3,
+"klausur": true
+}
+]
+},
+{
+"id": "ling:formalism-jakobson:jak",
+"f": "ling",
+"t": "formalism-jakobson",
+"k": 2,
+"s": true,
+"y": "fam",
+"fam": 1,
+"z": "Knows Jakobson and the disciplines influenced by formalism",
+"a": [
+{
+"y": "liste",
+"p": "Formalism (Roman Jakobson 1920s): Name three linguistic disciplines that formalism heavily influenced.",
+"pk": [
+[
+"phonology"
+],
+[
+"morphology"
+],
+[
+"syntax"
+],
+[
+"semantics"
+],
+[
+"stylistics",
+"poetics"
+]
+],
+"n": 3,
+"de_hint": "Arbeitsblatt 2.3: Nenne drei Disziplinen, die der Formalismus stark beeinflusst hat.",
+"w": "phonology, morphology, syntax.",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "luecke",
+"p": "Formalism, represented by [[0]] in the [[1]], heavily influenced phonology, morphology and syntax.",
+"l": [
+[
+"Roman Jakobson",
+"Jakobson"
+],
+[
+"1920s",
+"1920"
+]
+],
+"de_hint": "Formalismus, vertreten durch … in den …",
+"w": "",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "luecke",
+"p": "[[0]] studies the sound system, [[1]] the structure of words and [[2]] the structure of sentences.",
+"l": [
+[
+"phonology"
+],
+[
+"morphology"
+],
+[
+"syntax"
+]
+],
+"de_hint": "… untersucht das Lautsystem, … den Wortbau, … den Satzbau.",
+"w": "phonology – morphology – syntax.",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "luecke",
+"p": "In 1926 Jakobson helped found the [[0]] Linguistic Circle together with Nikolai [[1]].",
+"l": [
+[
+"Prague"
+],
+[
+"Trubetzkoy",
+"Trubetskoy"
+]
+],
+"de_hint": "1926 gründete Jakobson mit Nikolai … den … Linguistikkreis.",
+"w": "",
+"lvl": 3
+},
+{
+"y": "luecke",
+"p": "Jakobson’s most famous contribution to phonology is the theory of [[0]] features, e.g. voiced vs. voiceless in /b/ and /p/.",
+"l": [
+[
+"distinctive"
+]
+],
+"de_hint": "Jakobsons berühmtester Beitrag: die Theorie der … Merkmale.",
+"w": "",
+"lvl": 3
+},
+{
+"y": "zuord",
+"p": "Which discipline?",
+"k": [
+"phonology",
+"morphology",
+"syntax"
+],
+"e": [
+[
+"/p/ vs /b/ in pat – bat",
+0
+],
+[
+"un-friend-ly",
+1
+],
+[
+"word order in “The frog sees the fly.”",
+2
+],
+[
+"walk + -ed",
+1
+],
+[
+"voiced and voiceless sounds",
+0
+],
+[
+"how phrases combine into sentences",
+2
+]
+],
+"de_hint": "Welche Disziplin?",
+"w": "",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "mc",
+"p": "Which discipline was NOT heavily influenced by formalism?",
+"o": [
+[
+"sociolinguistics",
+true
+],
+[
+"phonology",
+false
+],
+[
+"morphology",
+false
+],
+[
+"syntax (sentence structure)",
+false
+]
+],
+"de_hint": "Welche Disziplin wurde NICHT stark vom Formalismus geprägt?",
+"w": "Formalism looks at form, not at society. · Form, nicht Gesellschaft.",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "mc",
+"p": "Formalists analyse language mainly by …",
+"o": [
+[
+"its form and structure",
+true
+],
+[
+"the intentions of the speaker",
+false
+],
+[
+"its history and change",
+false
+],
+[
+"the social status of speakers",
+false
+]
+],
+"de_hint": "Formalisten analysieren Sprache vor allem nach …",
+"w": "",
+"lvl": 1
+},
+{
+"y": "block",
+"p": "True or false?",
+"aussagen": [
+[
+"Jakobson belonged to Russian Formalism.",
+true
+],
+[
+"Jakobson developed the language acquisition device.",
+false
+],
+[
+"Morphology studies the smallest meaningful parts of words.",
+true
+],
+[
+"Phonology studies the meaning of sentences.",
+false
+]
+],
+"de_hint": "Richtig oder falsch?",
+"w": "",
+"lvl": 2
+},
+{
+"y": "kurz",
+"p": "Which discipline did Jakobson influence most, together with Trubetzkoy?",
+"ok": [
+"phonology"
+],
+"de_hint": "Welche Disziplin prägte Jakobson mit Trubetzkoy am stärksten?",
+"w": "",
+"lvl": 2
+},
+{
+"y": "reihe",
+"p": "Order the disciplines from the smallest to the largest unit.",
+"o": [
+"phonology",
+"morphology",
+"syntax"
+],
+"de_hint": "Ordne vom kleinsten zur größten Einheit.",
+"w": "sound → word → sentence.",
+"lvl": 1
+}
+]
+},
+{
+"id": "ling:schools-overview:ueber",
+"f": "ling",
+"t": "schools-overview",
+"k": 2,
+"s": false,
+"y": "fam",
+"fam": 1,
+"z": "Assigns names, dates and key terms",
+"a": [
+{
+"y": "zuord",
+"p": "Saussure, Jakobson or Chomsky?",
+"k": [
+"Saussure",
+"Jakobson",
+"Chomsky"
+],
+"e": [
+[
+"langue and parole",
+0
+],
+[
+"language acquisition device",
+2
+],
+[
+"Prague Linguistic Circle",
+1
+],
+[
+"signifié and signifiant",
+0
+],
+[
+"Universal Grammar",
+2
+],
+[
+"distinctive features",
+1
+],
+[
+"~1900",
+0
+],
+[
+"1950s/60s",
+2
+]
+],
+"de_hint": "Saussure, Jakobson oder Chomsky?",
+"w": "",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "reihe",
+"p": "Put the linguists in chronological order.",
+"o": [
+"Saussure (~1900)",
+"Jakobson (1920s)",
+"Chomsky (1950s/60s)"
+],
+"de_hint": "Bringe die Linguisten in zeitliche Reihenfolge.",
+"w": "",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "luecke",
+"p": "[[0]] stands for structuralism, while Jakobson and [[1]] stand for formalism.",
+"l": [
+[
+"Saussure",
+"Ferdinand de Saussure"
+],
+[
+"Chomsky",
+"Noam Chomsky"
+]
+],
+"de_hint": "… steht für Strukturalismus, Jakobson und … für Formalismus.",
+"w": "",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "luecke",
+"p": "Saussure’s pair langue/parole roughly corresponds to Chomsky’s pair [[0]]/[[1]].",
+"l": [
+[
+"competence"
+],
+[
+"performance"
+]
+],
+"de_hint": "Saussures langue/parole entspricht in etwa Chomskys …/….",
+"w": "",
+"lvl": 2
+},
+{
+"y": "mc",
+"p": "What is the main difference between langue and competence?",
+"o": [
+[
+"langue is social, competence is in each speaker’s mind",
+true
+],
+[
+"langue is innate, competence is learned at school",
+false
+],
+[
+"langue is spoken, competence is only written",
+false
+],
+[
+"there is no real difference at all between the two terms",
+false
+]
+],
+"de_hint": "Hauptunterschied zwischen langue und Kompetenz?",
+"w": "",
+"lvl": 3
+},
+{
+"y": "mc",
+"p": "Which term belongs to structuralism?",
+"o": [
+[
+"signifiant",
+true
+],
+[
+"Universal Grammar",
+false
+],
+[
+"language acquisition device",
+false
+],
+[
+"distinctive features",
+false
+]
+],
+"de_hint": "Welcher Begriff gehört zum Strukturalismus?",
+"w": "",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "block",
+"p": "True or false?",
+"aussagen": [
+[
+"Saussure’s work is older than Chomsky’s.",
+true
+],
+[
+"Jakobson worked in the 1950s and 1960s.",
+false
+],
+[
+"All three focus on the language system rather than on single conversations.",
+true
+],
+[
+"Chomsky developed the model of signifié and signifiant.",
+false
+]
+],
+"de_hint": "Richtig oder falsch?",
+"w": "",
+"lvl": 1
+},
+{
+"y": "kurz",
+"p": "Which school of thought did Ferdinand de Saussure found?",
+"ok": [
+"structuralism",
+"structural linguistics"
+],
+"de_hint": "Welche Denkschule begründete Saussure?",
+"w": "",
+"lvl": 2,
+"klausur": true
+},
+{
+"y": "rev",
+"p": "Compare structuralism and formalism (Chomsky): who, when, key idea.",
+"l": "Structuralism: Ferdinand de Saussure, ~1900; language as an abstract system of signs (langue) shared by a speech community, studied rather than parole. Formalism: Noam Chomsky, 1950s/60s; humans are born with a language acquisition device based on innate Universal Grammar.",
+"pk": [
+"Saussure ~1900, langue/parole",
+"Chomsky 1950s/60s",
+"LAD and Universal Grammar",
+"both focus on the system"
+],
+"de_hint": "Vergleiche Strukturalismus und Formalismus (Chomsky).",
+"w": "",
+"lvl": 3,
+"klausur": true
+}
+]
+}
+]
+}

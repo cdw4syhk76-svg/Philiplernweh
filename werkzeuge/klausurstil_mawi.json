@@ -1,0 +1,138 @@
+{
+ "Drei Ebenen von Zielkonflikten": {
+  "nennen": "Nennen Sie die drei Ebenen, auf denen Zielkonflikte der Materialwirtschaft entstehen.",
+  "erklaeren": "Erklären Sie die drei Ebenen von Zielkonflikten in der Materialwirtschaft jeweils mit einem Beispiel."
+ },
+ "Entwicklung vs. Logistik": {
+  "erklaeren": "Erläutern Sie den Zielkonflikt zwischen Entwicklung und Logistik."
+ },
+ "Verkäufermarkt": {
+  "nennen": "Nennen Sie drei Merkmale eines Verkäufermarkts aus Sicht des Einkaufs."
+ },
+ "Käufermarkt": {
+  "nennen": "Nennen Sie drei Merkmale eines Käufermarkts aus Sicht des Einkaufs."
+ },
+ "Bestände ermöglichen": {
+  "nennen": "Nennen Sie fünf Funktionen, die Bestände im Unternehmen erfüllen.",
+  "erklaeren": "Erklären Sie, wozu Unternehmen Bestände halten."
+ },
+ "Bestände verdecken": {
+  "nennen": "Nennen Sie fünf Probleme, die hohe Bestände verdecken können.",
+  "erklaeren": "Erklären Sie, warum hohe Bestände Probleme im Unternehmen verdecken."
+ },
+ "Nutzenkategorien": {
+  "nennen": "Nennen Sie fünf Nutzenkategorien des Materialgruppenmanagements.",
+  "erklaeren": null
+ },
+ "Zentrale Ziele im MGM": null,
+ "Vorteile Zentraleinkauf": {
+  "nennen": "Nennen Sie vier Vorteile eines zentralen Einkaufs.",
+  "erklaeren": "Nennen und erklären Sie vier Vorteile eines zentralen Einkaufs."
+ },
+ "Vorteile dezentraler Einkauf": {
+  "nennen": "Nennen Sie vier Vorteile eines dezentralen Einkaufs.",
+  "erklaeren": "Nennen und erklären Sie vier Vorteile eines dezentralen Einkaufs."
+ },
+ "Folgen falscher Zuordnung": {
+  "nennen": "Nennen Sie vier Folgen einer falschen Zuordnung von Materialien zu Materialgruppen.",
+  "erklaeren": null
+ },
+ "Erste Schritte zur Datenbasis": {
+  "nennen": "Nennen Sie vier erste Schritte, um eine Datenbasis für die Materialgruppen zu schaffen.",
+  "erklaeren": null
+ },
+ "UNSPSC": {
+  "nennen": "Nennen Sie die fünf Ebenen des UNSPSC.",
+  "erklaeren": "Erklären Sie den Aufbau des UNSPSC und grenzen Sie ihn von eCl@ss ab."
+ },
+ "eCl@ss": {
+  "nennen": "Nennen Sie die vier Stufen von eCl@ss.",
+  "erklaeren": "Erklären Sie den Aufbau von eCl@ss."
+ },
+ "Enabler der Umsetzung": {
+  "nennen": "Nennen Sie fünf Enabler (Werkzeuge) für die Umsetzung von Materialgruppenstrategien.",
+  "erklaeren": null
+ },
+ "Was begleitet alle Phasen?": null,
+ "MGM-Prozess": {
+  "erklaeren": "Beschreiben Sie den Prozess des Materialgruppenmanagements von der Bildung der Materialgruppen bis zum Controlling."
+ },
+ "Inhalte der IST-Analyse": {
+  "erklaeren": "Erläutern Sie, welche internen und externen Analysen zur IST-Analyse im Materialgruppenmanagement gehören."
+ },
+ "Vier Phasen": {
+  "nennen": "Nennen Sie die vier Phasen des Vier-Phasen-Modells.",
+  "erklaeren": "Nennen und erklären Sie die vier Phasen des Vier-Phasen-Modells."
+ },
+ "Strategie (Definition)": {
+  "erklaeren": "Definieren Sie den Begriff „Strategie“."
+ },
+ "Interner Fokus": {
+  "nennen": "Nennen Sie vier Fragen, die die interne Datenbeschaffung beantworten muss.",
+  "erklaeren": null
+ },
+ "Lieferantenfokus": {
+  "nennen": "Nennen Sie vier Fragen, die die lieferantenbezogene Datenbeschaffung beantworten muss.",
+  "erklaeren": null
+ },
+ "Vorgegebene Zielparameter": {
+  "nennen": "Nennen Sie vier typische Zielparameter, die dem Einkauf vorgegeben werden.",
+  "erklaeren": null
+ },
+ "Top-3-Ziele Benchmark": {
+  "nennen": "Nennen Sie die drei wichtigsten Einkaufsziele laut Benchmark.",
+  "erklaeren": null
+ },
+ "Lieferantenpyramide": {
+  "erklaeren": "Erklären Sie die Lieferantenpyramide im IST und SOLL."
+ },
+ "Bausteine Lieferantenmanagement": {
+  "nennen": "Nennen Sie fünf Bausteine des Lieferantenmanagements.",
+  "erklaeren": null
+ },
+ "Strategiekette": {
+  "erklaeren": "Erklären Sie, wie Einkaufsziele, Einkaufsstrategie, Materialgruppenstrategie und Lieferantenstrategie zusammenhängen."
+ },
+ "Risiko weniger Top-Lieferanten": null,
+ "BCG-Felder": {
+  "nennen": "Nennen Sie die vier Felder der BCG-Matrix mit ihrer Normstrategie.",
+  "erklaeren": "Erklären Sie die vier Felder der BCG-Matrix und ihre Normstrategien."
+ },
+ "Schritte der Portfolio-Aufstellung": {
+  "nennen": "Nennen Sie die fünf Schritte zur Aufstellung eines Portfolios.",
+  "erklaeren": null
+ },
+ "Portfolio (Definition)": {
+  "erklaeren": "Erklären Sie, was ein Portfolio ist und wozu es im Einkauf dient."
+ },
+ "Herkunft der Portfoliotechnik": null,
+ "Emanzipationsstrategie": {
+  "erklaeren": "Erklären Sie die Emanzipationsstrategie im Marktmacht-Portfolio und nennen Sie zwei Maßnahmen."
+ },
+ "Geschäftsfreundestrategie": {
+  "erklaeren": "Erklären Sie die Geschäftsfreundestrategie im Marktmacht-Portfolio und nennen Sie zwei Maßnahmen."
+ },
+ "Achsen Risikoportfolio": {
+  "erklaeren": "Nennen und erklären Sie die beiden Achsen des Risikoportfolios."
+ },
+ "Investitionsstrategie": {
+  "erklaeren": "Erklären Sie die Investitionsstrategie im Risikoportfolio mit Beispielen."
+ },
+ "Abschöpfungsstrategie": {
+  "erklaeren": "Erklären Sie die Abschöpfungsstrategie im Risikoportfolio."
+ },
+ "Akzeptanzlinie": {
+  "erklaeren": "Erklären Sie die Funktion der Akzeptanzlinie im Risikoportfolio."
+ },
+ "SWOT-Normstrategien": {
+  "nennen": "Nennen Sie die vier Normstrategien der SWOT-Analyse.",
+  "erklaeren": "Nennen und erklären Sie die vier Normstrategien der SWOT-Analyse."
+ },
+ "Scoring-Modell": {
+  "erklaeren": "Beschreiben Sie das Vorgehen bei einem Scoring-Modell."
+ },
+ "Originäre Ziele der operativen Beschaffung": {
+  "nennen": "Nennen Sie vier originäre Einkaufsziele der operativen Beschaffung.",
+  "erklaeren": "Grenzen Sie die originären Einkaufsziele der operativen von denen der strategischen Beschaffung ab."
+ }
+}
