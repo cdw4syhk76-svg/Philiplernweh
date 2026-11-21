@@ -2,7 +2,7 @@
 
 Repo: `cdw4syhk76-svg/Philiplernweh` · Vorbild: `litschlernweh` (zweisprachiges Fach Intercultural Management)
 Quelle: `unterlagen/Linguistics/Additional_Handout_Key_Concepts.pdf` (1 Seite, Worksheet)
-Website: Vercel, ohne Login (Adresse siehe unten)
+Website: **https://philiplernweh.vercel.app** (Vercel-Team „Lernweh“, Projekt `philiplernweh`, ohne Login; Vercel-Schutz nur für Vorschauen)
 
 | Fach (id) | Unterthemen | Fragen | Karten | Glossar | Aufgaben | Probeklausur |
 |---|---|---|---|---|---|---|
